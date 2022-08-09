@@ -110,7 +110,7 @@ F 3 "" H 1800 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0101
+L C64-discrete-library:+5V-power #PWR0101
 U 1 1 605D008C
 P 1600 2700
 AR Path="/605D008C" Ref="#PWR0101"  Part="1" 
@@ -215,7 +215,7 @@ Connection ~ 1900 9600
 Wire Wire Line
 	1900 9600 2150 9600
 $Comp
-L power:+5V #PWR0102
+L C64-discrete-library:+5V-power #PWR0102
 U 1 1 605D00C1
 P 2150 9600
 AR Path="/605D00C1" Ref="#PWR0102"  Part="1" 
@@ -228,7 +228,7 @@ F 3 "" H 2150 9600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0103
+L C64-discrete-library:+5V-power #PWR0103
 U 1 1 605D00C7
 P 1800 7450
 AR Path="/605D00C7" Ref="#PWR0103"  Part="1" 
@@ -348,7 +348,7 @@ Connection ~ 2650 10900
 Wire Wire Line
 	2650 10900 2400 10900
 $Comp
-L power:+5V #PWR0104
+L C64-discrete-library:+5V-power #PWR0104
 U 1 1 605D0102
 P 2650 10550
 AR Path="/605D0102" Ref="#PWR0104"  Part="1" 
@@ -361,7 +361,7 @@ F 3 "" H 2650 10550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0105
+L C64-discrete-library:+5V-power #PWR0105
 U 1 1 605D0108
 P 3500 10200
 AR Path="/605D0108" Ref="#PWR0105"  Part="1" 
@@ -497,7 +497,7 @@ $EndComp
 Wire Wire Line
 	1575 6800 1500 6800
 $Comp
-L power:+5V #PWR0106
+L C64-discrete-library:+5V-power #PWR0106
 U 1 1 605D014C
 P 1575 6800
 AR Path="/605D014C" Ref="#PWR0106"  Part="1" 
@@ -674,7 +674,7 @@ F 3 "" H 4550 10650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0107
+L C64-discrete-library:+5V-power #PWR0107
 U 1 1 605D019F
 P 4550 10250
 AR Path="/605D019F" Ref="#PWR0107"  Part="1" 
@@ -844,7 +844,7 @@ $EndComp
 Wire Wire Line
 	3050 10600 3050 10550
 $Comp
-L power:+5V #PWR0108
+L C64-discrete-library:+5V-power #PWR0108
 U 1 1 605D01FB
 P 3050 10550
 AR Path="/605D01FB" Ref="#PWR0108"  Part="1" 
@@ -935,7 +935,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 1650 2100 1650
 $Comp
-L power:+5V #PWR0109
+L C64-discrete-library:+5V-power #PWR0109
 U 1 1 605D022A
 P 2250 1650
 AR Path="/605D022A" Ref="#PWR0109"  Part="1" 
@@ -1130,7 +1130,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 7150 3450 7400
 $Comp
-L power:+5V #PWR0110
+L C64-discrete-library:+5V-power #PWR0110
 U 1 1 605D02A3
 P 2950 7100
 AR Path="/605D02A3" Ref="#PWR0110"  Part="1" 
@@ -1245,7 +1245,7 @@ Wire Wire Line
 Text Notes 5200 10300 0    50   ~ 0
 RP3\n3.3K
 $Comp
-L power:+5V #PWR0111
+L C64-discrete-library:+5V-power #PWR0111
 U 1 1 605D02DE
 P 5150 10500
 AR Path="/605D02DE" Ref="#PWR0111"  Part="1" 
@@ -1306,7 +1306,7 @@ F 3 "~" H 6350 7350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0112
+L C64-discrete-library:+5V-power #PWR0112
 U 1 1 605D0302
 P 6100 7350
 AR Path="/605D0302" Ref="#PWR0112"  Part="1" 
@@ -1373,7 +1373,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 4800 5150 4900
 $Comp
-L power:+5V #PWR0113
+L C64-discrete-library:+5V-power #PWR0113
 U 1 1 605D0322
 P 5400 4800
 AR Path="/605D0322" Ref="#PWR0113"  Part="1" 
@@ -1392,7 +1392,7 @@ RP3\n3.3K
 Wire Wire Line
 	4950 4500 4950 4600
 $Comp
-L power:+5V #PWR0114
+L C64-discrete-library:+5V-power #PWR0114
 U 1 1 605D032B
 P 4950 4250
 AR Path="/605D032B" Ref="#PWR0114"  Part="1" 
@@ -1463,7 +1463,7 @@ Wire Wire Line
 	5050 1100 4900 1100
 Connection ~ 5050 1100
 $Comp
-L power:+5V #PWR0115
+L C64-discrete-library:+5V-power #PWR0115
 U 1 1 605D0350
 P 4900 1100
 AR Path="/605D0350" Ref="#PWR0115"  Part="1" 
@@ -1499,7 +1499,7 @@ CASS_RD
 Text Notes 2900 850  0    50   ~ 0
 RP3\n3.3K
 $Comp
-L power:+5V #PWR0116
+L C64-discrete-library:+5V-power #PWR0116
 U 1 1 605D0361
 P 2850 900
 AR Path="/605D0361" Ref="#PWR0116"  Part="1" 
@@ -1624,7 +1624,7 @@ Wire Wire Line
 Wire Wire Line
 	10850 6800 10850 6950
 $Comp
-L power:+5V #PWR0117
+L C64-discrete-library:+5V-power #PWR0117
 U 1 1 605D03B3
 P 11100 6800
 AR Path="/605D03B3" Ref="#PWR0117"  Part="1" 
@@ -1637,7 +1637,7 @@ F 3 "" H 11100 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0118
+L C64-discrete-library:+5V-power #PWR0118
 U 1 1 605D03B9
 P 10850 6800
 AR Path="/605D03B9" Ref="#PWR0118"  Part="1" 
@@ -1670,7 +1670,7 @@ Wire Wire Line
 	11700 6850 11700 6800
 Connection ~ 11700 6850
 $Comp
-L power:+5V #PWR0119
+L C64-discrete-library:+5V-power #PWR0119
 U 1 1 605D03C9
 P 11700 6800
 AR Path="/605D03C9" Ref="#PWR0119"  Part="1" 
@@ -1702,7 +1702,7 @@ Wire Wire Line
 Wire Wire Line
 	12350 6950 12350 6800
 $Comp
-L power:+5V #PWR0120
+L C64-discrete-library:+5V-power #PWR0120
 U 1 1 605D03D8
 P 12350 6800
 AR Path="/605D03D8" Ref="#PWR0120"  Part="1" 
@@ -1728,7 +1728,7 @@ F 3 "" H 10800 7650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0121
+L C64-discrete-library:+5V-power #PWR0121
 U 1 1 605D03E4
 P 10700 7650
 AR Path="/605D03E4" Ref="#PWR0121"  Part="1" 
@@ -1794,7 +1794,7 @@ F 3 "~" H 6500 10500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0122
+L C64-discrete-library:+5V-power #PWR0122
 U 1 1 605D0407
 P 6900 10750
 AR Path="/605D0407" Ref="#PWR0122"  Part="1" 
@@ -1904,7 +1904,7 @@ F 3 "" H 6650 10700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0123
+L C64-discrete-library:+5V-power #PWR0123
 U 1 1 605D0441
 P 6750 10500
 AR Path="/605D0441" Ref="#PWR0123"  Part="1" 
@@ -2330,7 +2330,7 @@ Text Label 6500 6400 0    50   ~ 0
 Text Notes 7650 7500 0    50   ~ 0
 RP4\n3.3K
 $Comp
-L power:+5V #PWR0124
+L C64-discrete-library:+5V-power #PWR0124
 U 1 1 605D051E
 P 8000 7000
 AR Path="/605D051E" Ref="#PWR0124"  Part="1" 
@@ -2547,7 +2547,7 @@ F 3 "" H 5500 800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0125
+L C64-discrete-library:+5V-power #PWR0125
 U 1 1 605D0591
 P 5400 800
 AR Path="/605D0591" Ref="#PWR0125"  Part="1" 
@@ -2781,7 +2781,7 @@ $EndComp
 Wire Wire Line
 	9550 2500 9450 2500
 $Comp
-L power:+5V #PWR0126
+L C64-discrete-library:+5V-power #PWR0126
 U 1 1 605D0606
 P 9450 2500
 AR Path="/605D0606" Ref="#PWR0126"  Part="1" 
@@ -2985,7 +2985,7 @@ Connection ~ 7500 3650
 Wire Wire Line
 	7500 3650 7650 3650
 $Comp
-L power:+5V #PWR0128
+L C64-discrete-library:+5V-power #PWR0128
 U 1 1 605D0672
 P 7650 3650
 AR Path="/605D0672" Ref="#PWR0128"  Part="1" 
@@ -3046,7 +3046,7 @@ Connection ~ 8850 10400
 Wire Wire Line
 	8850 10400 8850 10150
 $Comp
-L power:+5V #PWR0129
+L C64-discrete-library:+5V-power #PWR0129
 U 1 1 605D0699
 P 8850 9550
 AR Path="/605D0699" Ref="#PWR0129"  Part="1" 
@@ -3315,7 +3315,7 @@ Connection ~ 11000 9150
 Wire Wire Line
 	11000 9150 11400 9150
 $Comp
-L power:+5V #PWR0130
+L C64-discrete-library:+5V-power #PWR0130
 U 1 1 605D073F
 P 10800 9050
 AR Path="/605D073F" Ref="#PWR0130"  Part="1" 
@@ -3568,7 +3568,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 8350 9150 8350
 $Comp
-L power:+12V #PWR0131
+L C64-discrete-library:+12V-power #PWR0131
 U 1 1 605D07FE
 P 7950 7950
 F 0 "#PWR0131" H 7950 7800 50  0001 C CNN
@@ -5332,7 +5332,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 10500 6700 10500
 Wire Wire Line
-	11350 3100 11350 4500
+	11350 3100 11350 3150
 Connection ~ 9400 2950
 Wire Wire Line
 	9400 2950 10300 2950
@@ -5381,4 +5381,8 @@ Wire Wire Line
 Connection ~ 11800 3850
 Wire Wire Line
 	11800 3850 11900 3850
+Connection ~ 11350 3150
+Wire Wire Line
+	11350 3150 11350 4500
+Connection ~ 11350 3050
 $EndSCHEMATC
