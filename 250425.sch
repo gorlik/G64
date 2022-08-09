@@ -1,0 +1,4025 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 2
+Title "C64 250425 PCB"
+Date "2022-07-30"
+Rev "0.1"
+Comp ""
+Comment1 "by BWACK"
+Comment2 "with help from Der Alte Bastler"
+Comment3 "250425 changes by GGLABS"
+Comment4 ""
+$EndDescr
+$Comp
+L C64-schematics-library:CIA_U1 U1
+U 1 1 605D0060
+P 5450 5000
+AR Path="/605D0060" Ref="U1"  Part="1" 
+AR Path="/5D940AF4/605D0060" Ref="U?"  Part="1" 
+F 0 "U1" H 5950 4500 79  0000 C CNN
+F 1 "CIA_U1" H 5950 3700 50  0001 C CNN
+F 2 "C64-pcb-library:DIP40" H 5950 4900 50  0001 C CNN
+F 3 "" H 5950 4900 50  0001 C CNN
+	1    5450 5000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5450 5900
+Text Label 1550 5100 0    50   ~ 0
+COL0
+Text Label 1550 5200 0    50   ~ 0
+COL1
+Text Label 1550 5300 0    50   ~ 0
+COL2
+Text Label 1550 5400 0    50   ~ 0
+COL3
+Text Label 1550 5500 0    50   ~ 0
+COL4
+Text Label 1550 5600 0    50   ~ 0
+COL5
+Text Label 1550 5700 0    50   ~ 0
+COL6
+Text Label 1550 5800 0    50   ~ 0
+COL7
+Text Label 1550 6000 0    50   ~ 0
+ROW0
+Text Label 1550 6100 0    50   ~ 0
+ROW1
+Text Label 1550 6200 0    50   ~ 0
+ROW2
+Text Label 1550 6300 0    50   ~ 0
+ROW3
+Text Label 1550 6400 0    50   ~ 0
+ROW4
+Text Label 1550 6500 0    50   ~ 0
+ROW5
+Text Label 1550 6600 0    50   ~ 0
+ROW6
+Text Label 1550 6700 0    50   ~ 0
+ROW7
+$Comp
+L C64-schematics-library:SERIAL_BUS_CON CN4
+U 1 1 605D0077
+P 1500 1300
+AR Path="/605D0077" Ref="CN4"  Part="1" 
+AR Path="/5D940AF4/605D0077" Ref="CN?"  Part="1" 
+F 0 "CN4" V 1150 1350 118 0000 C CNN
+F 1 "SERIAL_BUS_CON" H 1600 350 118 0001 C CNN
+F 2 "C64-pcb-library:SERIAL_CON_DIN6" H 1450 700 118 0001 C CNN
+F 3 "" H 1450 700 118 0001 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 850  1600 1    79   Italic 0
+SERIAL BUS
+Text Notes 1000 1850 1    79   Italic 0
+(6-PIN FEMALE DIN)
+Text Label 1500 1000 0    50   Italic 0
+~EXTRST~
+Text Label 1500 1100 0    50   Italic 0
+~SRQIN~
+Text Label 1500 1200 0    50   Italic 0
+DATA
+Text Label 1500 1300 0    50   Italic 0
+CLK
+Text Label 1500 1400 0    50   Italic 0
+ATN
+Wire Wire Line
+	1500 1500 1550 1500
+Wire Wire Line
+	1550 1500 1550 1600
+$Comp
+L C64-discrete-library:+5V-power #PWR0101
+U 1 1 605D008C
+P 2050 2700
+AR Path="/605D008C" Ref="#PWR0101"  Part="1" 
+AR Path="/5D940AF4/605D008C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0101" H 2050 2550 50  0001 C CNN
+F 1 "+5V" H 1850 2750 50  0000 L CNN
+F 2 "" H 2050 2700 50  0001 C CNN
+F 3 "" H 2050 2700 50  0001 C CNN
+	1    2050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:USER_PORT_CON CN2
+U 1 1 605D0092
+P 1500 9100
+AR Path="/605D0092" Ref="CN2"  Part="1" 
+AR Path="/5D940AF4/605D0092" Ref="CN?"  Part="1" 
+F 0 "CN2" V 1150 9100 118 0000 C CIN
+F 1 "USER_PORT_CON" V 1350 9150 50  0001 C CNN
+F 2 "C64-pcb-library:EDGE_CON_24P" H 1400 8950 50  0001 C CNN
+F 3 "" H 1400 8950 50  0001 C CNN
+	1    1500 9100
+	1    0    0    -1  
+$EndComp
+Text Notes 1000 9700 1    79   Italic 0
+(24-PIN MALE EDGE)
+Text Notes 850  9400 1    79   Italic 0
+USER PORT
+Wire Wire Line
+	1500 8300 2000 8300
+Wire Wire Line
+	1500 8400 2100 8400
+Text Label 1500 8300 0    50   ~ 0
+CNT2
+Text Label 1500 8400 0    50   ~ 0
+SP2
+Text Label 1500 8500 0    50   ~ 0
+~PC2~
+Text Label 1500 8600 0    50   ~ 0
+PA2
+Text Label 1500 8700 0    50   ~ 0
+PB0
+Text Label 1500 8800 0    50   ~ 0
+PB1
+Text Label 1500 8900 0    50   ~ 0
+PB2
+Text Label 1500 9000 0    50   ~ 0
+PB3
+Text Label 1500 9100 0    50   ~ 0
+PB4
+Text Label 1500 9200 0    50   ~ 0
+PB5
+Text Label 1500 9300 0    50   ~ 0
+PB6
+Text Label 1500 9400 0    50   ~ 0
+PB7
+Text Label 1500 9500 0    50   ~ 0
+~FLAG2~
+Text Label 1500 9800 0    50   ~ 0
+~INTRST~
+Text Label 1550 9900 0    50   ~ 0
+9VAC~~
+Text Label 1550 10000 0    50   ~ 0
+'9VAC~~
+Wire Wire Line
+	1550 10100 1500 10100
+Wire Wire Line
+	1500 10200 1550 10200
+Connection ~ 1550 10200
+Wire Wire Line
+	1550 10200 1550 10100
+Wire Wire Line
+	1500 10300 1550 10300
+Connection ~ 1550 10300
+Wire Wire Line
+	1550 10300 1550 10200
+Wire Wire Line
+	1500 10400 1550 10400
+Connection ~ 1550 10400
+Wire Wire Line
+	1550 10400 1550 10300
+$Comp
+L C64-discrete-library:+5V-power #PWR0102
+U 1 1 605D00C1
+P 2150 9600
+AR Path="/605D00C1" Ref="#PWR0102"  Part="1" 
+AR Path="/5D940AF4/605D00C1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0102" H 2150 9450 50  0001 C CNN
+F 1 "+5V" V 2100 9650 50  0000 L CNN
+F 2 "" H 2150 9600 50  0001 C CNN
+F 3 "" H 2150 9600 50  0001 C CNN
+	1    2150 9600
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0103
+U 1 1 605D00C7
+P 1800 7450
+AR Path="/605D00C7" Ref="#PWR0103"  Part="1" 
+AR Path="/5D940AF4/605D00C7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0103" H 1800 7300 50  0001 C CNN
+F 1 "+5V" H 1750 7600 50  0000 L CNN
+F 2 "" H 1800 7450 50  0001 C CNN
+F 3 "" H 1800 7450 50  0001 C CNN
+	1    1800 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7500 1900 7500
+Connection ~ 1900 7500
+Wire Wire Line
+	1900 7500 2000 7500
+Connection ~ 2000 7500
+Wire Wire Line
+	2000 7500 2100 7500
+Connection ~ 1800 7500
+Wire Wire Line
+	1800 7500 1800 7450
+Text Notes 2150 7700 0    50   ~ 0
+RP3\n3.3K
+$Comp
+L C64-schematics-library:R_US_CUSTOM R41
+U 1 1 605D00D5
+P 2650 10700
+AR Path="/605D00D5" Ref="R41"  Part="1" 
+AR Path="/5D940AF4/605D00D5" Ref="R?"  Part="1" 
+F 0 "R41" H 2450 10750 50  0000 L CNN
+F 1 "1M" H 2475 10675 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 2650 10700 50  0001 C CNN
+F 3 "" H 2650 10700 50  0001 C CNN
+	1    2650 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R33
+U 1 1 605D00DB
+P 3500 10350
+AR Path="/605D00DB" Ref="R33"  Part="1" 
+AR Path="/5D940AF4/605D00DB" Ref="R?"  Part="1" 
+F 0 "R33" H 3300 10400 50  0000 L CNN
+F 1 "47K" H 3300 10325 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 3500 10350 50  0001 C CNN
+F 3 "" H 3500 10350 50  0001 C CNN
+	1    3500 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C23
+U 1 1 605D00E1
+P 3400 10650
+AR Path="/605D00E1" Ref="C23"  Part="1" 
+AR Path="/5D940AF4/605D00E1" Ref="C?"  Part="1" 
+F 0 "C23" H 3300 10800 50  0000 C CNN
+F 1 "360pF" H 3268 10728 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 3400 10650 50  0001 C CNN
+F 3 "~" H 3400 10650 50  0001 C CNN
+	1    3400 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C38
+U 1 1 605D00E7
+P 2850 10900
+AR Path="/605D00E7" Ref="C38"  Part="1" 
+AR Path="/5D940AF4/605D00E7" Ref="C?"  Part="1" 
+F 0 "C38" V 2968 10897 50  0000 C CNN
+F 1 "51pF" V 3044 10891 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 2850 10900 50  0001 C CNN
+F 3 "~" H 2850 10900 50  0001 C CNN
+	1    2850 10900
+	0    1    1    0   
+$EndComp
+Text Label 1950 6900 0    50   ~ 0
+~RESTORE~
+$Comp
+L C64-schematics-library:556 U20
+U 1 1 605D00EE
+P 3900 10800
+AR Path="/605D00EE" Ref="U20"  Part="1" 
+AR Path="/5D940AF4/605D00EE" Ref="U?"  Part="1" 
+F 0 "U20" H 3900 10900 79  0000 C CNN
+F 1 "556" H 3750 11300 50  0001 C CNN
+F 2 "C64-pcb-library:DIP14" H 3900 10800 50  0001 C CNN
+F 3 "" H 3900 10800 50  0001 C CNN
+	1    3900 10800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:556 U20
+U 2 1 605D00F4
+P 12000 7550
+AR Path="/605D00F4" Ref="U20"  Part="2" 
+AR Path="/5D940AF4/605D00F4" Ref="U?"  Part="2" 
+F 0 "U20" H 12000 7650 79  0000 C CNN
+F 1 "556" H 11850 8050 50  0001 C CNN
+F 2 "C64-pcb-library:DIP14" H 12000 7550 50  0001 C CNN
+F 3 "" H 12000 7550 50  0001 C CNN
+	2    12000 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 10500 3500 10500
+Wire Wire Line
+	3500 10600 3500 10550
+Connection ~ 3500 10500
+Wire Wire Line
+	3600 10600 3500 10600
+Wire Wire Line
+	2750 10900 2650 10900
+Wire Wire Line
+	2650 10900 2650 10800
+Connection ~ 2650 10900
+Wire Wire Line
+	2650 10900 2400 10900
+$Comp
+L C64-discrete-library:+5V-power #PWR0104
+U 1 1 605D0102
+P 2650 10550
+AR Path="/605D0102" Ref="#PWR0104"  Part="1" 
+AR Path="/5D940AF4/605D0102" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0104" H 2650 10400 50  0001 C CNN
+F 1 "+5V" H 2550 10700 50  0000 L CNN
+F 2 "" H 2650 10550 50  0001 C CNN
+F 3 "" H 2650 10550 50  0001 C CNN
+	1    2650 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0105
+U 1 1 605D0108
+P 3500 10200
+AR Path="/605D0108" Ref="#PWR0105"  Part="1" 
+AR Path="/5D940AF4/605D0108" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0105" H 3500 10050 50  0001 C CNN
+F 1 "+5V" H 3400 10350 50  0000 L CNN
+F 2 "" H 3500 10200 50  0001 C CNN
+F 3 "" H 3500 10200 50  0001 C CNN
+	1    3500 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 10500 3500 10450
+Wire Wire Line
+	3500 10250 3500 10200
+Wire Wire Line
+	3600 10400 3600 10200
+Wire Wire Line
+	3600 10200 3500 10200
+Wire Wire Line
+	2950 10900 3050 10900
+Wire Wire Line
+	2650 10600 2650 10550
+NoConn ~ 4200 10900
+Wire Wire Line
+	3400 10550 3500 10550
+Connection ~ 3500 10550
+Wire Wire Line
+	3500 10550 3500 10500
+Connection ~ 2050 2900
+Wire Wire Line
+	2050 4000 2050 2900
+Wire Wire Line
+	2050 2900 2050 2700
+Wire Wire Line
+	1500 6900 2400 6900
+Text Label 1500 4700 0    50   Italic 0
+BTNA\~LP~
+Text Label 1500 4600 0    50   Italic 0
+JOYA3
+Text Label 1500 4500 0    50   Italic 0
+JOYA2
+Text Label 1500 4400 0    50   Italic 0
+JOYA1
+Text Label 1500 4300 0    50   Italic 0
+JOYA0
+Text Label 1500 4200 0    50   Italic 0
+POTAY
+Text Label 1500 4100 0    50   Italic 0
+POTAX
+Wire Wire Line
+	1550 4800 1550 4900
+Wire Wire Line
+	1500 4800 1550 4800
+Wire Wire Line
+	1500 4000 2050 4000
+Text Label 1500 3600 0    50   Italic 0
+BTNB
+Text Label 1500 3500 0    50   Italic 0
+JOYB3
+Text Label 1500 3400 0    50   Italic 0
+JOYB2
+Text Label 1500 3300 0    50   Italic 0
+JOYB1
+Text Label 1500 3200 0    50   Italic 0
+JOYB0
+Text Label 1500 3100 0    50   Italic 0
+POTBY
+Text Label 1500 3000 0    50   Italic 0
+POTBX
+Wire Wire Line
+	1550 3700 1550 3800
+Wire Wire Line
+	1500 3700 1550 3700
+Wire Wire Line
+	1500 2900 2050 2900
+Wire Wire Line
+	1550 7100 1550 7200
+Wire Wire Line
+	1500 7100 1550 7100
+Text Notes 850  6400 1    79   Italic 0
+KEYBOARD
+Text Notes 1000 6550 1    79   Italic 0
+(20-PIN MALE)
+$Comp
+L C64-schematics-library:KEYBOARD_20PIN_MALE CN1
+U 1 1 605D0135
+P 1500 7100
+AR Path="/605D0135" Ref="CN1"  Part="1" 
+AR Path="/5D940AF4/605D0135" Ref="CN?"  Part="1" 
+F 0 "CN1" V 1150 8100 118 0000 C CIN
+F 1 "KEYBOARD_20PIN_MALE" V 1350 8000 50  0001 C CNN
+F 2 "C64-pcb-library:KEYBOARD_CON" H 1500 7100 50  0001 C CNN
+F 3 "" H 1500 7100 50  0001 C CNN
+	1    1500 7100
+	1    0    0    -1  
+$EndComp
+Text Notes 1000 3650 1    79   Italic 0
+(MALE DB9)
+Text Notes 850  3800 1    79   Italic 0
+CONTROL PORT2
+Text Notes 850  4900 1    79   Italic 0
+CONTROL PORT1
+Text Notes 1000 4750 1    79   Italic 0
+(MALE DB9)
+$Comp
+L C64-schematics-library:CONTROL_PORT CN8
+U 1 1 605D013F
+P 1500 3300
+AR Path="/605D013F" Ref="CN8"  Part="1" 
+AR Path="/5D940AF4/605D013F" Ref="CN?"  Part="1" 
+F 0 "CN8" V 1150 3300 118 0000 C CNN
+F 1 "CONTROL_PORT" V 1350 3300 39  0001 C CNN
+F 2 "C64-pcb-library:JOYPORT_DB9" H 1500 3700 118 0001 C CNN
+F 3 "" H 1500 3700 118 0001 C CNN
+	1    1500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:CONTROL_PORT CN9
+U 1 1 605D0145
+P 1500 4400
+AR Path="/605D0145" Ref="CN9"  Part="1" 
+AR Path="/5D940AF4/605D0145" Ref="CN?"  Part="1" 
+F 0 "CN9" V 1150 4400 118 0000 C CNN
+F 1 "CONTROL_PORT" V 1350 4400 39  0001 C CNN
+F 2 "C64-pcb-library:JOYPORT_DB9" H 1500 4800 118 0001 C CNN
+F 3 "" H 1500 4800 118 0001 C CNN
+	1    1500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 6800 1500 6800
+$Comp
+L C64-discrete-library:+5V-power #PWR0106
+U 1 1 605D014C
+P 1575 6800
+AR Path="/605D014C" Ref="#PWR0106"  Part="1" 
+AR Path="/5D940AF4/605D014C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0106" H 1575 6650 50  0001 C CNN
+F 1 "+5V" V 1590 6928 50  0000 L CNN
+F 2 "" H 1575 6800 50  0001 C CNN
+F 3 "" H 1575 6800 50  0001 C CNN
+	1    1575 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 6700 5450 6700
+Wire Wire Line
+	1500 6600 5450 6600
+Wire Wire Line
+	1500 6500 5450 6500
+Wire Wire Line
+	1500 6400 2350 6400
+Wire Wire Line
+	1500 6300 2450 6300
+Wire Wire Line
+	1500 6200 2550 6200
+Wire Wire Line
+	1500 6100 2650 6100
+Wire Wire Line
+	1500 6000 2750 6000
+Wire Wire Line
+	1500 5800 2150 5800
+Wire Wire Line
+	1500 5700 2250 5700
+Wire Wire Line
+	1500 5600 5450 5600
+Wire Wire Line
+	1500 5500 2850 5500
+Wire Wire Line
+	1500 5400 2950 5400
+Wire Wire Line
+	1500 5300 3050 5300
+Wire Wire Line
+	1500 5200 3150 5200
+Wire Wire Line
+	1500 5100 3250 5100
+$Comp
+L C64-schematics-library:GND_SMALL #U0101
+U 1 1 605D0162
+P 6100 9700
+AR Path="/605D0162" Ref="#U0101"  Part="1" 
+AR Path="/5D940AF4/605D0162" Ref="U?"  Part="1" 
+F 0 "#U0101" H 6100 9700 50  0001 C CNN
+F 1 "GND_SMALL" H 6100 9700 50  0001 C CNN
+F 2 "" H 6100 9700 50  0001 C CNN
+F 3 "" H 6100 9700 50  0001 C CNN
+	1    6100 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0102
+U 1 1 605D0168
+P 1550 10500
+AR Path="/605D0168" Ref="#U0102"  Part="1" 
+AR Path="/5D940AF4/605D0168" Ref="U?"  Part="1" 
+F 0 "#U0102" H 1550 10500 50  0001 C CNN
+F 1 "GND_SMALL" H 1550 10500 50  0001 C CNN
+F 2 "" H 1550 10500 50  0001 C CNN
+F 3 "" H 1550 10500 50  0001 C CNN
+	1    1550 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 10400 1550 10500
+$Comp
+L C64-schematics-library:GND_SMALL #U0103
+U 1 1 605D016F
+P 3400 10750
+AR Path="/605D016F" Ref="#U0103"  Part="1" 
+AR Path="/5D940AF4/605D016F" Ref="U?"  Part="1" 
+F 0 "#U0103" H 3400 10750 50  0001 C CNN
+F 1 "GND_SMALL" H 3400 10750 50  0001 C CNN
+F 2 "" H 3400 10750 50  0001 C CNN
+F 3 "" H 3400 10750 50  0001 C CNN
+	1    3400 10750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0105
+U 1 1 605D017B
+P 1550 7200
+AR Path="/605D017B" Ref="#U0105"  Part="1" 
+AR Path="/5D940AF4/605D017B" Ref="U?"  Part="1" 
+F 0 "#U0105" H 1550 7200 50  0001 C CNN
+F 1 "GND_SMALL" H 1550 7200 50  0001 C CNN
+F 2 "" H 1550 7200 50  0001 C CNN
+F 3 "" H 1550 7200 50  0001 C CNN
+	1    1550 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0106
+U 1 1 605D0181
+P 1550 4900
+AR Path="/605D0181" Ref="#U0106"  Part="1" 
+AR Path="/5D940AF4/605D0181" Ref="U?"  Part="1" 
+F 0 "#U0106" H 1550 4900 50  0001 C CNN
+F 1 "GND_SMALL" H 1550 4900 50  0001 C CNN
+F 2 "" H 1550 4900 50  0001 C CNN
+F 3 "" H 1550 4900 50  0001 C CNN
+	1    1550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0107
+U 1 1 605D0187
+P 1550 3800
+AR Path="/605D0187" Ref="#U0107"  Part="1" 
+AR Path="/5D940AF4/605D0187" Ref="U?"  Part="1" 
+F 0 "#U0107" H 1550 3800 50  0001 C CNN
+F 1 "GND_SMALL" H 1550 3800 50  0001 C CNN
+F 2 "" H 1550 3800 50  0001 C CNN
+F 3 "" H 1550 3800 50  0001 C CNN
+	1    1550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0108
+U 1 1 605D018D
+P 1550 1600
+AR Path="/605D018D" Ref="#U0108"  Part="1" 
+AR Path="/5D940AF4/605D018D" Ref="U?"  Part="1" 
+F 0 "#U0108" H 1550 1600 50  0001 C CNN
+F 1 "GND_SMALL" H 1550 1600 50  0001 C CNN
+F 2 "" H 1550 1600 50  0001 C CNN
+F 3 "" H 1550 1600 50  0001 C CNN
+	1    1550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0109
+U 1 1 605D0193
+P 6100 7100
+AR Path="/605D0193" Ref="#U0109"  Part="1" 
+AR Path="/5D940AF4/605D0193" Ref="U?"  Part="1" 
+F 0 "#U0109" H 6100 7100 50  0001 C CNN
+F 1 "GND_SMALL" H 6100 7100 50  0001 C CNN
+F 2 "" H 6100 7100 50  0001 C CNN
+F 3 "" H 6100 7100 50  0001 C CNN
+	1    6100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0110
+U 1 1 605D0199
+P 4550 10650
+AR Path="/605D0199" Ref="#U0110"  Part="1" 
+AR Path="/5D940AF4/605D0199" Ref="U?"  Part="1" 
+F 0 "#U0110" H 4550 10650 50  0001 C CNN
+F 1 "GND_SMALL" H 4550 10650 50  0001 C CNN
+F 2 "" H 4550 10650 50  0001 C CNN
+F 3 "" H 4550 10650 50  0001 C CNN
+	1    4550 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0107
+U 1 1 605D019F
+P 4550 10250
+AR Path="/605D019F" Ref="#PWR0107"  Part="1" 
+AR Path="/5D940AF4/605D019F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0107" H 4550 10100 50  0001 C CNN
+F 1 "+5V" H 4450 10400 50  0000 L CNN
+F 2 "" H 4550 10250 50  0001 C CNN
+F 3 "" H 4550 10250 50  0001 C CNN
+	1    4550 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C22
+U 1 1 605D01A5
+P 4400 10300
+AR Path="/605D01A5" Ref="C22"  Part="1" 
+AR Path="/5D940AF4/605D01A5" Ref="C?"  Part="1" 
+F 0 "C22" V 4250 10250 50  0000 C CNN
+F 1 ".1" V 4316 10212 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 4400 10300 50  0001 C CNN
+F 3 "~" H 4400 10300 50  0001 C CNN
+	1    4400 10300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 10250 4550 10300
+Connection ~ 4550 10300
+Wire Wire Line
+	4550 10300 4550 10350
+Wire Wire Line
+	4500 10300 4550 10300
+$Comp
+L C64-schematics-library:74LS06_ U8
+U 3 1 605D01B6
+P 4650 10650
+AR Path="/605D01B6" Ref="U8"  Part="3" 
+AR Path="/5D940AF4/605D01B6" Ref="U?"  Part="3" 
+F 0 "U8" H 4600 10950 50  0000 L CNN
+F 1 "7406N" H 4632 10735 50  0000 L CNN
+F 2 "C64-pcb-library:DIP14" H 4650 10650 50  0001 C CNN
+F 3 "" H 4650 10650 50  0001 C CNN
+	3    4650 10650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 7500 2100 7600
+Wire Wire Line
+	2000 7800 2000 8300
+Wire Wire Line
+	2000 7600 2000 7500
+Wire Wire Line
+	1900 7600 1900 7500
+Wire Wire Line
+	1800 7600 1800 7500
+Connection ~ 1800 7900
+Wire Wire Line
+	1800 7800 1800 7900
+Text Label 1500 7900 0    50   ~ 0
+CNT1
+Text Label 1500 8000 0    50   ~ 0
+SP1
+Wire Wire Line
+	1500 7900 1800 7900
+Connection ~ 1900 8000
+Wire Wire Line
+	1900 7800 1900 8000
+Text Label 1500 8100 0    50   ~ 0
+ATN'
+Wire Wire Line
+	1500 8000 1900 8000
+$Comp
+L C64-schematics-library:74LS06_ U8
+U 1 1 605D01CA
+P 4050 7300
+AR Path="/605D01CA" Ref="U8"  Part="1" 
+AR Path="/5D940AF4/605D01CA" Ref="U?"  Part="1" 
+F 0 "U8" H 4000 7350 50  0000 C CNN
+F 1 "7406N" H 3700 7500 50  0000 C CNN
+F 2 "C64-pcb-library:DIP14" H 4050 7300 50  0001 C CNN
+F 3 "" H 4050 7300 50  0001 C CNN
+	1    4050 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L C64-schematics-library:74LS06_ U8
+U 5 1 605D01D0
+P 4050 7600
+AR Path="/605D01D0" Ref="U8"  Part="5" 
+AR Path="/5D940AF4/605D01D0" Ref="U?"  Part="4" 
+F 0 "U8" H 4000 7650 50  0000 C CNN
+F 1 "7406N" H 3700 7800 50  0000 C CNN
+F 2 "C64-pcb-library:DIP14" H 4050 7600 50  0001 C CNN
+F 3 "" H 4050 7600 50  0001 C CNN
+	5    4050 7600
+	-1   0    0    1   
+$EndComp
+Text Label 5000 7800 0    50   ~ 0
+CLK'
+Connection ~ 2100 8400
+Connection ~ 2000 8300
+Wire Wire Line
+	2100 7800 2100 8400
+Wire Wire Line
+	5450 7900 4650 7900
+Wire Wire Line
+	5450 8000 4550 8000
+Text Label 5000 7900 0    50   ~ 0
+DATA_OUT
+Text Label 5000 8000 0    50   ~ 0
+CLK_OUT
+Text Label 5000 8100 0    50   ~ 0
+ATN_OUT
+$Comp
+L C64-schematics-library:CIA_U2 U2
+U 1 1 605D01E0
+P 5450 7600
+AR Path="/605D01E0" Ref="U2"  Part="1" 
+AR Path="/5D940AF4/605D01E0" Ref="U?"  Part="1" 
+F 0 "U2" H 5950 6900 79  0000 C CNN
+F 1 "CIA_U2" H 5950 5900 50  0001 C CNN
+F 2 "C64-pcb-library:DIP40" H 5950 6450 50  0001 C CNN
+F 3 "" H 5950 6450 50  0001 C CNN
+	1    5450 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 8500 5450 8500
+Wire Wire Line
+	2100 8400 5450 8400
+Wire Wire Line
+	2000 8300 5450 8300
+Wire Wire Line
+	1500 9500 5150 9500
+Wire Wire Line
+	1500 9400 5450 9400
+Wire Wire Line
+	1500 9300 5450 9300
+Wire Wire Line
+	1500 9200 5450 9200
+Wire Wire Line
+	1500 9100 5450 9100
+Wire Wire Line
+	1500 9000 5450 9000
+Wire Wire Line
+	1500 8900 5450 8900
+Wire Wire Line
+	1500 8800 5450 8800
+Wire Wire Line
+	1500 8700 5450 8700
+Wire Wire Line
+	1500 8600 5450 8600
+Wire Wire Line
+	3050 10800 3050 10900
+$Comp
+L C64-schematics-library:R_US_CUSTOM R35
+U 1 1 605D01F4
+P 3050 10700
+AR Path="/605D01F4" Ref="R35"  Part="1" 
+AR Path="/5D940AF4/605D01F4" Ref="R?"  Part="1" 
+F 0 "R35" H 2826 10753 50  0000 L CNN
+F 1 "470K" H 2793 10668 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 3050 10700 50  0001 C CNN
+F 3 "" H 3050 10700 50  0001 C CNN
+	1    3050 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 10600 3050 10550
+$Comp
+L C64-discrete-library:+5V-power #PWR0108
+U 1 1 605D01FB
+P 3050 10550
+AR Path="/605D01FB" Ref="#PWR0108"  Part="1" 
+AR Path="/5D940AF4/605D01FB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0108" H 3050 10400 50  0001 C CNN
+F 1 "+5V" H 2950 10700 50  0000 L CNN
+F 2 "" H 3050 10550 50  0001 C CNN
+F 3 "" H 3050 10550 50  0001 C CNN
+	1    3050 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 10900 3600 10900
+Connection ~ 3050 10900
+Wire Wire Line
+	2400 6900 2400 10900
+Connection ~ 2150 5800
+Wire Wire Line
+	2150 5800 5450 5800
+Wire Wire Line
+	2150 2500 2050 2500
+Wire Wire Line
+	2150 2500 2150 5800
+Wire Wire Line
+	1950 2500 1950 2300
+Wire Wire Line
+	2050 2300 2050 2500
+Connection ~ 2050 2500
+Wire Wire Line
+	2050 2500 1950 2500
+Wire Wire Line
+	2150 2300 2150 2400
+Wire Wire Line
+	2150 2400 2250 2400
+Wire Wire Line
+	2250 2300 2250 2400
+Connection ~ 2250 5700
+Connection ~ 2250 2400
+Wire Wire Line
+	2250 2400 2250 5700
+Wire Wire Line
+	2250 5700 5450 5700
+Wire Wire Line
+	2350 2300 2350 3000
+Wire Wire Line
+	1500 3000 2350 3000
+Wire Wire Line
+	2450 2300 2450 3100
+Wire Wire Line
+	1500 3100 2450 3100
+Wire Wire Line
+	2550 2300 2550 4100
+Wire Wire Line
+	1500 4100 2550 4100
+Wire Wire Line
+	2650 2300 2650 4200
+Wire Wire Line
+	1500 4200 2650 4200
+Text Label 2150 2950 1    50   ~ 0
+COL7
+Text Label 2250 2950 1    50   ~ 0
+COL6
+Text Label 2350 2950 1    50   Italic 0
+POTBX
+Text Label 2450 2950 1    50   Italic 0
+POTBY
+Text Label 2550 2950 1    50   Italic 0
+POTAX
+Text Label 2650 2950 1    50   Italic 0
+POTAY
+$Comp
+L C64-discrete-library:C_Small C47
+U 1 1 605D0222
+P 2000 1650
+AR Path="/605D0222" Ref="C47"  Part="1" 
+AR Path="/5D940AF4/605D0222" Ref="C?"  Part="1" 
+F 0 "C47" V 1846 1716 50  0000 C CNN
+F 1 ".1" V 1916 1746 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 2000 1650 50  0001 C CNN
+F 3 "~" H 2000 1650 50  0001 C CNN
+	1    2000 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1700 2250 1650
+Wire Wire Line
+	2250 1650 2100 1650
+$Comp
+L C64-discrete-library:+5V-power #PWR0109
+U 1 1 605D022A
+P 2250 1650
+AR Path="/605D022A" Ref="#PWR0109"  Part="1" 
+AR Path="/5D940AF4/605D022A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0109" H 2250 1500 50  0001 C CNN
+F 1 "+5V" H 2173 1806 50  0000 L CNN
+F 2 "" H 2250 1650 50  0001 C CNN
+F 3 "" H 2250 1650 50  0001 C CNN
+	1    2250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:4066_U28 U28
+U 1 1 605D023D
+P 2300 2000
+F 0 "U28" H 1900 2100 75  0000 L CIN
+F 1 "4066_U28" H 2200 1500 50  0001 C CNN
+F 2 "C64-pcb-library:DIP14" H 2300 2000 50  0001 C CNN
+F 3 "" H 2300 2000 50  0001 C CNN
+	1    2300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2000 2850 2100
+Wire Wire Line
+	2350 1700 2350 1500
+Wire Wire Line
+	2350 1500 2550 1500
+Wire Wire Line
+	2550 1700 2550 1500
+Connection ~ 2550 1500
+Wire Wire Line
+	2550 1500 4450 1500
+Wire Wire Line
+	2450 1700 2450 1650
+Wire Wire Line
+	2650 1700 2650 1650
+Wire Wire Line
+	2450 1650 2650 1650
+Connection ~ 2650 1650
+Wire Wire Line
+	2650 1650 4450 1650
+Text GLabel 4450 1500 2    50   Output ~ 0
+POTX
+Text GLabel 4450 1650 2    50   Output ~ 0
+POTY
+Wire Wire Line
+	1500 4700 2350 4700
+Wire Wire Line
+	2350 4700 2350 6400
+Connection ~ 2350 4700
+Connection ~ 2350 6400
+Wire Wire Line
+	2350 6400 5450 6400
+Wire Wire Line
+	2450 4600 2450 6300
+Wire Wire Line
+	1500 4600 2450 4600
+Connection ~ 2450 6300
+Wire Wire Line
+	2450 6300 5450 6300
+Wire Wire Line
+	2550 4500 2550 6200
+Wire Wire Line
+	1500 4500 2550 4500
+Connection ~ 2550 6200
+Wire Wire Line
+	2550 6200 5450 6200
+Wire Wire Line
+	2650 4400 2650 6100
+Wire Wire Line
+	1500 4400 2650 4400
+Connection ~ 2650 6100
+Wire Wire Line
+	2650 6100 5450 6100
+Wire Wire Line
+	2750 4300 2750 6000
+Wire Wire Line
+	1500 4300 2750 4300
+Connection ~ 2750 6000
+Wire Wire Line
+	2750 6000 5450 6000
+Wire Wire Line
+	2850 3600 2850 5500
+Wire Wire Line
+	1500 3600 2850 3600
+Connection ~ 2850 5500
+Wire Wire Line
+	2850 5500 5450 5500
+Wire Wire Line
+	2950 3500 2950 5400
+Wire Wire Line
+	1500 3500 2950 3500
+Connection ~ 2950 5400
+Wire Wire Line
+	2950 5400 5450 5400
+Wire Wire Line
+	3050 3400 3050 5300
+Wire Wire Line
+	1500 3400 3050 3400
+Connection ~ 3050 5300
+Wire Wire Line
+	3050 5300 5450 5300
+Wire Wire Line
+	3150 3300 3150 5200
+Wire Wire Line
+	1500 3300 3150 3300
+Connection ~ 3150 5200
+Wire Wire Line
+	3150 5200 5450 5200
+Wire Wire Line
+	3250 3200 3250 5100
+Wire Wire Line
+	1500 3200 3250 3200
+Connection ~ 3250 5100
+Wire Wire Line
+	3250 5100 5450 5100
+Text GLabel 4350 4700 2    50   Output ~ 0
+BTNA\~LP~
+Wire Wire Line
+	5450 6800 2500 6800
+Wire Wire Line
+	2500 6800 2500 7900
+Wire Wire Line
+	1800 7900 2500 7900
+Wire Wire Line
+	5450 6900 2600 6900
+Wire Wire Line
+	2600 6900 2600 8000
+Wire Wire Line
+	1900 8000 2600 8000
+Wire Wire Line
+	1500 1400 3450 1400
+Wire Wire Line
+	1500 1300 3650 1300
+Wire Wire Line
+	1500 1200 3850 1200
+Wire Wire Line
+	1500 8100 3450 8100
+Wire Wire Line
+	5450 7800 4750 7800
+Wire Wire Line
+	4750 7800 4750 7300
+Connection ~ 3850 7200
+Connection ~ 3650 7300
+Wire Wire Line
+	3650 7300 3250 7300
+$Comp
+L C64-discrete-library:+5V-power #PWR0110
+U 1 1 605D02A3
+P 2950 7100
+AR Path="/605D02A3" Ref="#PWR0110"  Part="1" 
+AR Path="/5D940AF4/605D02A3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 2950 6950 50  0001 C CNN
+F 1 "+5V" H 2873 7256 50  0000 L CNN
+F 2 "" H 2950 7100 50  0001 C CNN
+F 3 "" H 2950 7100 50  0001 C CNN
+	1    2950 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R28
+U 1 1 605D02A9
+P 3150 7400
+AR Path="/605D02A9" Ref="R28"  Part="1" 
+AR Path="/5D940AF4/605D02A9" Ref="R?"  Part="1" 
+F 0 "R28" V 3222 7311 50  0000 L CNN
+F 1 "1K" V 3292 7311 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 3150 7400 50  0001 C CNN
+F 3 "" H 3150 7400 50  0001 C CNN
+	1    3150 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R30
+U 1 1 605D02AF
+P 3150 7300
+AR Path="/605D02AF" Ref="R30"  Part="1" 
+AR Path="/5D940AF4/605D02AF" Ref="R?"  Part="1" 
+F 0 "R30" V 3100 6850 50  0000 L CNN
+F 1 "1K" V 3168 6876 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 3150 7300 50  0001 C CNN
+F 3 "" H 3150 7300 50  0001 C CNN
+	1    3150 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R29
+U 1 1 605D02B5
+P 3150 7200
+AR Path="/605D02B5" Ref="R29"  Part="1" 
+AR Path="/5D940AF4/605D02B5" Ref="R?"  Part="1" 
+F 0 "R29" V 3020 7134 50  0000 L CNN
+F 1 "1K" V 3088 7179 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 3150 7200 50  0001 C CNN
+F 3 "" H 3150 7200 50  0001 C CNN
+	1    3150 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 7100 2950 7200
+Wire Wire Line
+	3050 7200 2950 7200
+Connection ~ 2950 7200
+Wire Wire Line
+	2950 7200 2950 7300
+Wire Wire Line
+	3050 7300 2950 7300
+Connection ~ 2950 7300
+Wire Wire Line
+	2950 7300 2950 7400
+Wire Wire Line
+	3050 7400 2950 7400
+Wire Wire Line
+	3450 7400 3250 7400
+Wire Wire Line
+	3450 7400 3450 8100
+Connection ~ 3450 7400
+Connection ~ 3450 8100
+Wire Wire Line
+	3950 7200 3950 7450
+Connection ~ 3950 7200
+Wire Wire Line
+	3950 7200 3850 7200
+Wire Wire Line
+	4200 10500 4350 10500
+Wire Wire Line
+	4000 7450 3950 7450
+Wire Wire Line
+	4650 7450 4350 7450
+Wire Wire Line
+	4650 7450 4650 7900
+Wire Wire Line
+	4550 8000 4550 7750
+Wire Wire Line
+	4550 7750 4350 7750
+Wire Wire Line
+	4350 8100 5450 8100
+Text Label 5000 7600 0    50   ~ 0
+~NMI~
+Wire Wire Line
+	5450 7700 4850 7700
+Wire Wire Line
+	4850 7700 4850 7200
+Text Label 5000 7700 0    50   ~ 0
+DATA'
+Wire Wire Line
+	4950 7600 4950 10500
+Wire Wire Line
+	4950 10500 4700 10500
+Wire Wire Line
+	4950 7600 5450 7600
+Connection ~ 4950 7600
+Wire Wire Line
+	5150 10100 5150 9500
+Connection ~ 5150 9500
+Wire Wire Line
+	5150 9500 5450 9500
+Wire Wire Line
+	5150 10300 5150 10500
+Text Notes 5200 10300 0    50   ~ 0
+RP3\n3.3K
+$Comp
+L C64-discrete-library:+5V-power #PWR0111
+U 1 1 605D02DE
+P 5150 10500
+AR Path="/605D02DE" Ref="#PWR0111"  Part="1" 
+AR Path="/5D940AF4/605D02DE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0111" H 5150 10350 50  0001 C CNN
+F 1 "+5V" H 5050 10650 50  0000 L CNN
+F 2 "" H 5150 10500 50  0001 C CNN
+F 3 "" H 5150 10500 50  0001 C CNN
+	1    5150 10500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 7750 3750 7750
+Wire Wire Line
+	3750 7750 3750 7300
+Connection ~ 3750 7300
+Wire Wire Line
+	3750 7300 3650 7300
+Wire Wire Line
+	3450 8100 4000 8100
+Wire Wire Line
+	12350 7650 12300 7650
+$Comp
+L C64-schematics-library:6510_MPU U7
+U 1 1 605D02F0
+P 5950 3050
+F 0 "U7" H 5989 3212 79  0000 R CNN
+F 1 "6510_MPU" H 5750 1350 50  0001 C CNN
+F 2 "C64-pcb-library:DIP40" H 5950 3050 50  0001 C CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0112
+U 1 1 605D02F6
+P 5950 4800
+AR Path="/605D02F6" Ref="#U0112"  Part="1" 
+AR Path="/5D940AF4/605D02F6" Ref="U?"  Part="1" 
+F 0 "#U0112" H 5950 4800 50  0001 C CNN
+F 1 "GND_SMALL" H 5950 4800 50  0001 C CNN
+F 2 "" H 5950 4800 50  0001 C CNN
+F 3 "" H 5950 4800 50  0001 C CNN
+	1    5950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C3
+U 1 1 605D02FC
+P 6350 7350
+AR Path="/605D02FC" Ref="C3"  Part="1" 
+AR Path="/5D940AF4/605D02FC" Ref="C?"  Part="1" 
+F 0 "C3" V 6200 7300 50  0000 C CNN
+F 1 ".1" V 6266 7262 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 6350 7350 50  0001 C CNN
+F 3 "~" H 6350 7350 50  0001 C CNN
+	1    6350 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0112
+U 1 1 605D0302
+P 6100 7350
+AR Path="/605D0302" Ref="#PWR0112"  Part="1" 
+AR Path="/5D940AF4/605D0302" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0112" H 6100 7200 50  0001 C CNN
+F 1 "+5V" H 6023 7506 50  0000 L CNN
+F 2 "" H 6100 7350 50  0001 C CNN
+F 3 "" H 6100 7350 50  0001 C CNN
+	1    6100 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7400 6100 7350
+Wire Wire Line
+	6100 7350 6250 7350
+$Comp
+L C64-schematics-library:GND_SMALL #U0113
+U 1 1 605D030B
+P 6500 7450
+AR Path="/605D030B" Ref="#U0113"  Part="1" 
+AR Path="/5D940AF4/605D030B" Ref="U?"  Part="1" 
+F 0 "#U0113" H 6500 7450 50  0001 C CNN
+F 1 "GND_SMALL" H 6500 7450 50  0001 C CNN
+F 2 "" H 6500 7450 50  0001 C CNN
+F 3 "" H 6500 7450 50  0001 C CNN
+	1    6500 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 7350 6500 7350
+Wire Wire Line
+	6500 7350 6500 7450
+$Comp
+L C64-discrete-library:C_Small C2
+U 1 1 605D0313
+P 5300 4800
+AR Path="/605D0313" Ref="C2"  Part="1" 
+AR Path="/5D940AF4/605D0313" Ref="C?"  Part="1" 
+F 0 "C2" V 5200 4690 50  0000 C CNN
+F 1 ".1" V 5263 4703 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 5300 4800 50  0001 C CNN
+F 3 "~" H 5300 4800 50  0001 C CNN
+	1    5300 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 4800 5850 4800
+$Comp
+L C64-schematics-library:GND_SMALL #U0114
+U 1 1 605D031A
+P 5150 4900
+AR Path="/605D031A" Ref="#U0114"  Part="1" 
+AR Path="/5D940AF4/605D031A" Ref="U?"  Part="1" 
+F 0 "#U0114" H 5150 4900 50  0001 C CNN
+F 1 "GND_SMALL" H 5150 4900 50  0001 C CNN
+F 2 "" H 5150 4900 50  0001 C CNN
+F 3 "" H 5150 4900 50  0001 C CNN
+	1    5150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4800 5150 4800
+Wire Wire Line
+	5150 4800 5150 4900
+$Comp
+L C64-discrete-library:+5V-power #PWR0113
+U 1 1 605D0322
+P 5400 4800
+AR Path="/605D0322" Ref="#PWR0113"  Part="1" 
+AR Path="/5D940AF4/605D0322" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0113" H 5400 4650 50  0001 C CNN
+F 1 "+5V" H 5283 4941 50  0000 L CNN
+F 2 "" H 5400 4800 50  0001 C CNN
+F 3 "" H 5400 4800 50  0001 C CNN
+	1    5400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4600 5450 4600
+Text Notes 5000 4450 0    50   ~ 0
+RP3\n3.3K
+Wire Wire Line
+	4950 4500 4950 4600
+$Comp
+L C64-discrete-library:+5V-power #PWR0114
+U 1 1 605D032B
+P 4950 4250
+AR Path="/605D032B" Ref="#PWR0114"  Part="1" 
+AR Path="/5D940AF4/605D032B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0114" H 4950 4100 50  0001 C CNN
+F 1 "+5V" H 4833 4391 50  0000 L CNN
+F 2 "" H 4950 4250 50  0001 C CNN
+F 3 "" H 4950 4250 50  0001 C CNN
+	1    4950 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 4600
+Wire Wire Line
+	4950 4600 4950 7600
+Wire Wire Line
+	4950 4250 4950 4300
+$Comp
+L C64-discrete-library:C_Small C9
+U 1 1 605D0335
+P 5350 1350
+AR Path="/605D0335" Ref="C9"  Part="1" 
+AR Path="/5D940AF4/605D0335" Ref="C?"  Part="1" 
+F 0 "C9" H 5220 1390 50  0000 C CNN
+F 1 ".1" H 5235 1318 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 5350 1350 50  0001 C CNN
+F 3 "~" H 5350 1350 50  0001 C CNN
+	1    5350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0115
+U 1 1 605D033B
+P 5350 1450
+AR Path="/605D033B" Ref="#U0115"  Part="1" 
+AR Path="/5D940AF4/605D033B" Ref="U?"  Part="1" 
+F 0 "#U0115" H 5350 1450 50  0001 C CNN
+F 1 "GND_SMALL" H 5350 1450 50  0001 C CNN
+F 2 "" H 5350 1450 50  0001 C CNN
+F 3 "" H 5350 1450 50  0001 C CNN
+	1    5350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1150 5950 1100
+Wire Wire Line
+	5950 1100 5350 1100
+Wire Wire Line
+	5350 1100 5350 1250
+$Comp
+L C64-discrete-library:CP_Small C8
+U 1 1 605D0344
+P 5050 1350
+F 0 "C8" H 4875 1395 50  0000 L CNN
+F 1 "10uF" H 4794 1312 50  0000 L CNN
+F 2 "C64-pcb-library:CAP_ELYT_RADIAL_P5.08mm_SMALL_RING" H 5050 1350 50  0001 C CNN
+F 3 "~" H 5050 1350 50  0001 C CNN
+	1    5050 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 1500 0    50   ~ 0
+25V
+Wire Wire Line
+	5050 1250 5050 1100
+Wire Wire Line
+	5050 1100 5350 1100
+Connection ~ 5350 1100
+Wire Wire Line
+	5050 1100 4900 1100
+Connection ~ 5050 1100
+$Comp
+L C64-discrete-library:+5V-power #PWR0115
+U 1 1 605D0350
+P 4900 1100
+AR Path="/605D0350" Ref="#PWR0115"  Part="1" 
+AR Path="/5D940AF4/605D0350" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0115" H 4900 950 50  0001 C CNN
+F 1 "+5V" V 4900 1200 50  0000 L CNN
+F 2 "" H 4900 1100 50  0001 C CNN
+F 3 "" H 4900 1100 50  0001 C CNN
+	1    4900 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0116
+U 1 1 605D0356
+P 5050 1450
+AR Path="/605D0356" Ref="#U0116"  Part="1" 
+AR Path="/5D940AF4/605D0356" Ref="U?"  Part="1" 
+F 0 "#U0116" H 5050 1450 50  0001 C CNN
+F 1 "GND_SMALL" H 5050 1450 50  0001 C CNN
+F 2 "" H 5050 1450 50  0001 C CNN
+F 3 "" H 5050 1450 50  0001 C CNN
+	1    5050 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5000 5450 5000
+Wire Wire Line
+	1500 1100 3200 1100
+Wire Wire Line
+	4050 1100 4050 1150
+Text Label 4350 5000 0    50   ~ 0
+CASS_RD
+Text Notes 2900 850  0    50   ~ 0
+RP3\n3.3K
+$Comp
+L C64-discrete-library:+5V-power #PWR0116
+U 1 1 605D0361
+P 2850 900
+AR Path="/605D0361" Ref="#PWR0116"  Part="1" 
+AR Path="/5D940AF4/605D0361" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0116" H 2850 750 50  0001 C CNN
+F 1 "+5V" V 2850 1000 50  0000 L CNN
+F 2 "" H 2850 900 50  0001 C CNN
+F 3 "" H 2850 900 50  0001 C CNN
+	1    2850 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 900  2850 900 
+Wire Wire Line
+	3100 900  3200 900 
+Wire Wire Line
+	3200 900  3200 1100
+Connection ~ 3200 1100
+Wire Wire Line
+	3200 1100 4050 1100
+Wire Wire Line
+	1500 1000 1850 1000
+Wire Wire Line
+	1850 1000 1850 600 
+Wire Wire Line
+	4050 1150 4300 1150
+Wire Wire Line
+	4300 1150 4300 1000
+Connection ~ 4050 1150
+Wire Wire Line
+	4050 1150 4050 2700
+$Comp
+L C64-schematics-library:74LS06_ U8
+U 6 1 605D0372
+P 4050 7950
+AR Path="/605D0372" Ref="U8"  Part="6" 
+AR Path="/5D940AF4/605D0372" Ref="U?"  Part="2" 
+F 0 "U8" H 4050 8000 50  0000 C CNN
+F 1 "7406N" H 3700 8150 50  0000 C CNN
+F 2 "C64-pcb-library:DIP14" H 4050 7950 50  0001 C CNN
+F 3 "" H 4050 7950 50  0001 C CNN
+	6    4050 7950
+	-1   0    0    1   
+$EndComp
+$Comp
+L C64-schematics-library:74LS06_ U8
+U 4 1 605D0378
+P 14000 7400
+AR Path="/605D0378" Ref="U8"  Part="4" 
+AR Path="/5D940AF4/605D0378" Ref="U?"  Part="6" 
+F 0 "U8" H 13875 7548 50  0000 C CNN
+F 1 "7406N" H 14031 7464 50  0000 C CNN
+F 2 "C64-pcb-library:DIP14" H 14000 7400 50  0001 C CNN
+F 3 "" H 14000 7400 50  0001 C CNN
+	4    14000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 7250 13400 7250
+NoConn ~ 12300 7350
+Wire Wire Line
+	11700 7350 11600 7350
+Wire Wire Line
+	11600 7350 11600 7250
+Wire Wire Line
+	11700 7250 11600 7250
+Connection ~ 11600 7250
+Wire Wire Line
+	11600 7250 11450 7250
+$Comp
+L C64-discrete-library:C_Small C34
+U 1 1 605D038B
+P 11650 7850
+AR Path="/605D038B" Ref="C34"  Part="1" 
+AR Path="/5D940AF4/605D038B" Ref="C?"  Part="1" 
+F 0 "C34" H 11468 7826 50  0000 C CNN
+F 1 ".1" H 11496 7899 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 11650 7850 50  0001 C CNN
+F 3 "~" H 11650 7850 50  0001 C CNN
+	1    11650 7850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12350 7650 12350 7950
+Wire Wire Line
+	11700 7650 11650 7650
+Wire Wire Line
+	11650 7750 11650 7650
+Connection ~ 11650 7650
+Wire Wire Line
+	11650 7650 11500 7650
+$Comp
+L C64-discrete-library:CP_Small C24
+U 1 1 605D039C
+P 11450 7350
+F 0 "C24" H 11191 7394 50  0000 L CNN
+F 1 "22uF" H 11194 7318 50  0000 L CNN
+F 2 "C64-pcb-library:CAP_ELYT_RADIAL_P5.08mm_SMALL_RING" H 11450 7350 50  0001 C CNN
+F 3 "~" H 11450 7350 50  0001 C CNN
+	1    11450 7350
+	1    0    0    -1  
+$EndComp
+Text Notes 11200 7500 0    50   ~ 0
+25V
+Wire Wire Line
+	11700 7150 11700 6800
+$Comp
+L C64-schematics-library:R_US_CUSTOM R34
+U 1 1 605D03AA
+P 11450 7050
+AR Path="/605D03AA" Ref="R34"  Part="1" 
+AR Path="/5D940AF4/605D03AA" Ref="R?"  Part="1" 
+F 0 "R34" H 11250 7100 50  0000 L CNN
+F 1 "47K" H 11250 7025 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 11450 7050 50  0001 C CNN
+F 3 "" H 11450 7050 50  0001 C CNN
+	1    11450 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11450 7150 11450 7250
+Wire Wire Line
+	11450 6800 11450 6950
+$Comp
+L C64-discrete-library:+5V-power #PWR0117
+U 1 1 605D03B3
+P 11700 6800
+AR Path="/605D03B3" Ref="#PWR0117"  Part="1" 
+AR Path="/5D940AF4/605D03B3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0117" H 11700 6650 50  0001 C CNN
+F 1 "+5V" H 11650 6950 50  0000 L CNN
+F 2 "" H 11700 6800 50  0001 C CNN
+F 3 "" H 11700 6800 50  0001 C CNN
+	1    11700 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0118
+U 1 1 605D03B9
+P 11450 6800
+AR Path="/605D03B9" Ref="#PWR0118"  Part="1" 
+AR Path="/5D940AF4/605D03B9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0118" H 11450 6650 50  0001 C CNN
+F 1 "+5V" H 11400 6950 50  0000 L CNN
+F 2 "" H 11450 6800 50  0001 C CNN
+F 3 "" H 11450 6800 50  0001 C CNN
+	1    11450 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C39
+U 1 1 605D03BF
+P 12450 6950
+AR Path="/605D03BF" Ref="C39"  Part="1" 
+AR Path="/5D940AF4/605D03BF" Ref="C?"  Part="1" 
+F 0 "C39" H 12286 6921 50  0000 C CNN
+F 1 ".1" H 12296 6999 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 12450 6950 50  0001 C CNN
+F 3 "~" H 12450 6950 50  0001 C CNN
+	1    12450 6950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12450 6850 12300 6850
+Wire Wire Line
+	12300 6850 12300 7150
+Wire Wire Line
+	12300 6850 12300 6800
+Connection ~ 12300 6850
+$Comp
+L C64-discrete-library:+5V-power #PWR0119
+U 1 1 605D03C9
+P 12300 6800
+AR Path="/605D03C9" Ref="#PWR0119"  Part="1" 
+AR Path="/5D940AF4/605D03C9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0119" H 12300 6650 50  0001 C CNN
+F 1 "+5V" H 12250 6950 50  0000 L CNN
+F 2 "" H 12300 6800 50  0001 C CNN
+F 3 "" H 12300 6800 50  0001 C CNN
+	1    12300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R36
+U 1 1 605D03CF
+P 14150 7050
+AR Path="/605D03CF" Ref="R36"  Part="1" 
+AR Path="/5D940AF4/605D03CF" Ref="R?"  Part="1" 
+F 0 "R36" H 13950 7100 50  0000 L CNN
+F 1 "1K" H 13950 7025 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 14150 7050 50  0001 C CNN
+F 3 "" H 14150 7050 50  0001 C CNN
+	1    14150 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 7250 14150 7250
+Wire Wire Line
+	14150 7250 14150 7150
+Wire Wire Line
+	14150 6950 14150 6800
+$Comp
+L C64-discrete-library:+5V-power #PWR0120
+U 1 1 605D03D8
+P 14150 6800
+AR Path="/605D03D8" Ref="#PWR0120"  Part="1" 
+AR Path="/5D940AF4/605D03D8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0120" H 14150 6650 50  0001 C CNN
+F 1 "+5V" H 14100 6950 50  0000 L CNN
+F 2 "" H 14150 6800 50  0001 C CNN
+F 3 "" H 14150 6800 50  0001 C CNN
+	1    14150 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R50
+U 1 1 605D03DE
+P 11400 7650
+AR Path="/605D03DE" Ref="R50"  Part="1" 
+AR Path="/5D940AF4/605D03DE" Ref="R?"  Part="1" 
+F 0 "R50" V 11325 7578 50  0000 L CNN
+F 1 "1M" V 11256 7615 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 11400 7650 50  0001 C CNN
+F 3 "" H 11400 7650 50  0001 C CNN
+	1    11400 7650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0121
+U 1 1 605D03E4
+P 11300 7650
+AR Path="/605D03E4" Ref="#PWR0121"  Part="1" 
+AR Path="/5D940AF4/605D03E4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0121" H 11300 7500 50  0001 C CNN
+F 1 "+5V" V 11300 7750 50  0000 L CNN
+F 2 "" H 11300 7650 50  0001 C CNN
+F 3 "" H 11300 7650 50  0001 C CNN
+	1    11300 7650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 9800 7150 9050
+Wire Wire Line
+	7150 9050 6450 9050
+Wire Wire Line
+	1500 9800 7150 9800
+Wire Wire Line
+	7150 9050 7150 6600
+Wire Wire Line
+	7150 6600 6450 6600
+Connection ~ 7150 9050
+Wire Wire Line
+	7150 6600 7150 6050
+Wire Wire Line
+	7150 1750 6450 1750
+Connection ~ 7150 6600
+Wire Wire Line
+	5950 10700 6500 10700
+Text Label 6050 10700 0    50   ~ 0
+60Hz
+$Comp
+L C64-schematics-library:R_US_CUSTOM R5
+U 1 1 605D03FB
+P 7800 10650
+AR Path="/605D03FB" Ref="R5"  Part="1" 
+AR Path="/5D940AF4/605D03FB" Ref="R?"  Part="1" 
+F 0 "R5" V 7650 10581 50  0000 L CNN
+F 1 "560" V 7726 10575 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 7800 10650 50  0001 C CNN
+F 3 "" H 7800 10650 50  0001 C CNN
+	1    7800 10650
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0122
+U 1 1 605D0407
+P 6900 10750
+AR Path="/605D0407" Ref="#PWR0122"  Part="1" 
+AR Path="/5D940AF4/605D0407" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0122" H 6900 10600 50  0001 C CNN
+F 1 "+5V" V 6900 10850 50  0000 L CNN
+F 2 "" H 6900 10750 50  0001 C CNN
+F 3 "" H 6900 10750 50  0001 C CNN
+	1    6900 10750
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0118
+U 1 1 605D0413
+P 6400 10600
+AR Path="/605D0413" Ref="#U0118"  Part="1" 
+AR Path="/5D940AF4/605D0413" Ref="U?"  Part="1" 
+F 0 "#U0118" H 6400 10600 50  0001 C CNN
+F 1 "GND_SMALL" H 6400 10600 50  0001 C CNN
+F 2 "" H 6400 10600 50  0001 C CNN
+F 3 "" H 6400 10600 50  0001 C CNN
+	1    6400 10600
+	1    0    0    -1  
+$EndComp
+Text Label 5950 10250 1    50   ~ 0
+60Hz
+$Comp
+L C64-schematics-library:R_US_CUSTOM R37
+U 1 1 605D041B
+P 6250 10250
+AR Path="/605D041B" Ref="R37"  Part="1" 
+AR Path="/5D940AF4/605D041B" Ref="R?"  Part="1" 
+F 0 "R37" V 6100 10181 50  0000 L CNN
+F 1 "2K7" V 6176 10175 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 6250 10250 50  0001 C CNN
+F 3 "" H 6250 10250 50  0001 C CNN
+	1    6250 10250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 9700 5950 10250
+Wire Wire Line
+	6150 10250 5950 10250
+Connection ~ 5950 10250
+Wire Wire Line
+	5950 10250 5950 10700
+$Comp
+L C64-discrete-library:D_Zener_Small_ALT CR1
+U 1 1 605D0425
+P 7450 10850
+F 0 "CR1" V 7476 10626 50  0000 L CNN
+F 1 "IN4371" V 7550 10520 50  0000 L CNN
+F 2 "C64-pcb-library:ZENER_12.7mm" V 7450 10850 50  0001 C CNN
+F 3 "~" V 7450 10850 50  0001 C CNN
+	1    7450 10850
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0119
+U 1 1 605D042B
+P 7450 11050
+AR Path="/605D042B" Ref="#U0119"  Part="1" 
+AR Path="/5D940AF4/605D042B" Ref="U?"  Part="1" 
+F 0 "#U0119" H 7450 11050 50  0001 C CNN
+F 1 "GND_SMALL" H 7450 11050 50  0001 C CNN
+F 2 "" H 7450 11050 50  0001 C CNN
+F 3 "" H 7450 11050 50  0001 C CNN
+	1    7450 11050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 10950 7450 11050
+Text Notes 7224 11061 0    50   ~ 0
+2.7V
+Wire Wire Line
+	7900 10650 8150 10650
+Wire Wire Line
+	8150 9900 8150 10650
+Wire Wire Line
+	1500 9900 8150 9900
+Wire Wire Line
+	1500 10000 8250 10000
+Text Label 8150 10650 2    50   ~ 0
+9VAC~~
+$Comp
+L C64-schematics-library:7408_U27 U27
+U 1 1 605D0438
+P 6700 10700
+F 0 "U27" H 6700 10700 50  0000 C CNN
+F 1 "7408_U27" H 6700 10500 50  0001 C CNN
+F 2 "C64-pcb-library:DIP14" H 6650 10700 50  0001 C CNN
+F 3 "" H 6650 10700 50  0001 C CNN
+	1    6700 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0123
+U 1 1 605D0441
+P 6750 10500
+AR Path="/605D0441" Ref="#PWR0123"  Part="1" 
+AR Path="/5D940AF4/605D0441" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0123" H 6750 10350 50  0001 C CNN
+F 1 "+5V" V 6683 10492 50  0000 L CNN
+F 2 "" H 6750 10500 50  0001 C CNN
+F 3 "" H 6750 10500 50  0001 C CNN
+	1    6750 10500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 10250 6950 10250
+Wire Wire Line
+	6950 10250 6950 10650
+Wire Wire Line
+	6950 10650 6900 10650
+Wire Wire Line
+	7450 10750 7450 10650
+Wire Wire Line
+	7450 10650 7650 10650
+Text Label 3550 10900 0    10   ~ 0
+TRIGA
+Wire Wire Line
+	14150 7250 14400 7250
+Wire Wire Line
+	14400 7250 14400 6050
+Connection ~ 14150 7250
+Connection ~ 7150 6050
+Wire Wire Line
+	7150 6050 7150 1750
+Text GLabel 14700 6050 2    50   Output ~ 0
+~INTRST~
+Text GLabel 7350 9600 2    50   Input ~ 0
+~CIA1~
+Text GLabel 7350 9450 2    50   Input ~ 0
+~CIA2~
+Wire Wire Line
+	6850 6800 6450 6800
+Text Label 6450 6800 0    50   ~ 0
+~CIA1~
+Text Label 6500 9450 0    50   ~ 0
+~CIA2~
+Text GLabel 7350 9300 2    50   Output ~ 0
+~VA15~
+Text GLabel 7350 9150 2    50   Output ~ 0
+~VA14~
+Text GLabel 7350 8900 2    50   Output ~ 0
+A[0..15]
+Wire Wire Line
+	6450 7600 6550 7600
+Wire Wire Line
+	6450 7700 6550 7700
+Wire Wire Line
+	6450 7800 6550 7800
+Wire Wire Line
+	6450 7900 6550 7900
+Wire Wire Line
+	6450 8000 6550 8000
+Wire Wire Line
+	6450 8100 6550 8100
+Wire Wire Line
+	6450 8200 6550 8200
+Wire Wire Line
+	6450 8300 6550 8300
+Text Label 6450 7600 0    50   ~ 0
+D7
+Text Label 6450 7700 0    50   ~ 0
+D6
+Text Label 6450 7800 0    50   ~ 0
+D5
+Text Label 6450 7900 0    50   ~ 0
+D4
+Text Label 6450 8000 0    50   ~ 0
+D3
+Text Label 6450 8100 0    50   ~ 0
+D2
+Text Label 6450 8200 0    50   ~ 0
+D1
+Text Label 6450 8300 0    50   ~ 0
+D0
+Entry Wire Line
+	6550 7600 6650 7700
+Entry Wire Line
+	6550 7700 6650 7800
+Entry Wire Line
+	6550 7800 6650 7900
+Entry Wire Line
+	6550 7900 6650 8000
+Entry Wire Line
+	6550 8000 6650 8100
+Entry Wire Line
+	6550 8100 6650 8200
+Entry Wire Line
+	6550 8200 6650 8300
+Entry Wire Line
+	6550 8300 6650 8400
+Wire Bus Line
+	7350 8400 6650 8400
+Entry Wire Line
+	6650 1850 6750 1950
+Entry Wire Line
+	6650 1950 6750 2050
+Entry Wire Line
+	6650 2050 6750 2150
+Entry Wire Line
+	6650 2150 6750 2250
+Entry Wire Line
+	6650 2250 6750 2350
+Entry Wire Line
+	6650 2350 6750 2450
+Entry Wire Line
+	6650 2450 6750 2550
+Entry Wire Line
+	6650 2550 6750 2650
+Entry Wire Line
+	6650 2650 6750 2750
+Entry Wire Line
+	6650 2750 6750 2850
+Entry Wire Line
+	6650 2850 6750 2950
+Entry Wire Line
+	6650 2950 6750 3050
+Entry Wire Line
+	6650 3050 6750 3150
+Entry Wire Line
+	6650 3150 6750 3250
+Entry Wire Line
+	6650 3250 6750 3350
+Entry Wire Line
+	6650 3350 6750 3450
+Wire Wire Line
+	6450 1850 6650 1850
+Wire Wire Line
+	6450 1950 6650 1950
+Wire Wire Line
+	6450 2050 6650 2050
+Wire Wire Line
+	6450 2150 6650 2150
+Wire Wire Line
+	6450 2250 6650 2250
+Wire Wire Line
+	6450 2350 6650 2350
+Wire Wire Line
+	6450 2450 6650 2450
+Wire Wire Line
+	6450 2550 6650 2550
+Wire Wire Line
+	6450 2650 6650 2650
+Wire Wire Line
+	6450 2750 6650 2750
+Wire Wire Line
+	6450 2850 6650 2850
+Wire Wire Line
+	6450 2950 6650 2950
+Wire Wire Line
+	6450 3050 6650 3050
+Wire Wire Line
+	6450 3150 6650 3150
+Wire Wire Line
+	6450 3250 6650 3250
+Wire Wire Line
+	6450 3350 6650 3350
+Text Label 6500 3350 0    50   ~ 0
+A0
+Text Label 6500 3250 0    50   ~ 0
+A1
+Text Label 6500 3150 0    50   ~ 0
+A2
+Text Label 6500 3050 0    50   ~ 0
+A3
+Text Label 6500 2950 0    50   ~ 0
+A4
+Text Label 6500 2850 0    50   ~ 0
+A5
+Text Label 6500 2750 0    50   ~ 0
+A6
+Text Label 6500 2650 0    50   ~ 0
+A7
+Text Label 6500 2550 0    50   ~ 0
+A8
+Text Label 6500 2450 0    50   ~ 0
+A9
+Text Label 6500 2350 0    50   ~ 0
+A10
+Text Label 6500 2250 0    50   ~ 0
+A11
+Text Label 6500 2150 0    50   ~ 0
+A12
+Text Label 6500 2050 0    50   ~ 0
+A13
+Text Label 6500 1950 0    50   ~ 0
+A14
+Text Label 6500 1850 0    50   ~ 0
+A15
+Wire Wire Line
+	6450 9150 6950 9150
+Wire Wire Line
+	6950 9150 6950 6700
+Wire Wire Line
+	6950 6700 6450 6700
+Wire Wire Line
+	6950 6700 6950 4350
+Wire Wire Line
+	6950 4350 6450 4350
+Connection ~ 6950 6700
+Text Label 6500 8800 0    50   ~ 0
+A0
+Text Label 6500 8700 0    50   ~ 0
+A1
+Text Label 6500 8600 0    50   ~ 0
+A2
+Text Label 6500 8500 0    50   ~ 0
+A3
+Entry Wire Line
+	6700 5900 6800 6000
+Entry Wire Line
+	6700 6000 6800 6100
+Entry Wire Line
+	6700 6100 6800 6200
+Entry Wire Line
+	6700 6200 6800 6300
+Wire Wire Line
+	6450 5900 6700 5900
+Wire Wire Line
+	6450 6000 6700 6000
+Wire Wire Line
+	6450 6100 6700 6100
+Wire Wire Line
+	6450 6200 6700 6200
+Text Label 6500 6200 0    50   ~ 0
+A0
+Text Label 6500 6100 0    50   ~ 0
+A1
+Text Label 6500 6000 0    50   ~ 0
+A2
+Text Label 6500 5900 0    50   ~ 0
+A3
+Wire Wire Line
+	6450 5000 6550 5000
+Wire Wire Line
+	6450 5100 6550 5100
+Wire Wire Line
+	6450 5200 6550 5200
+Wire Wire Line
+	6450 5300 6550 5300
+Wire Wire Line
+	6450 5400 6550 5400
+Wire Wire Line
+	6450 5500 6550 5500
+Wire Wire Line
+	6450 5600 6550 5600
+Wire Wire Line
+	6450 5700 6550 5700
+Text Label 6450 5000 0    50   ~ 0
+D7
+Text Label 6450 5100 0    50   ~ 0
+D6
+Text Label 6450 5200 0    50   ~ 0
+D5
+Text Label 6450 5300 0    50   ~ 0
+D4
+Text Label 6450 5400 0    50   ~ 0
+D3
+Text Label 6450 5500 0    50   ~ 0
+D2
+Text Label 6450 5600 0    50   ~ 0
+D1
+Text Label 6450 5700 0    50   ~ 0
+D0
+Entry Wire Line
+	6550 5000 6650 5100
+Entry Wire Line
+	6550 5100 6650 5200
+Entry Wire Line
+	6550 5200 6650 5300
+Entry Wire Line
+	6550 5300 6650 5400
+Entry Wire Line
+	6550 5400 6650 5500
+Entry Wire Line
+	6550 5500 6650 5600
+Entry Wire Line
+	6550 5600 6650 5700
+Entry Wire Line
+	6550 5700 6650 5800
+Wire Wire Line
+	6450 3450 6550 3450
+Wire Wire Line
+	6450 3550 6550 3550
+Wire Wire Line
+	6450 3650 6550 3650
+Wire Wire Line
+	6450 3750 6550 3750
+Wire Wire Line
+	6450 3850 6550 3850
+Wire Wire Line
+	6450 3950 6550 3950
+Wire Wire Line
+	6450 4050 6550 4050
+Wire Wire Line
+	6450 4150 6550 4150
+Text Label 6450 3450 0    50   ~ 0
+D7
+Text Label 6450 3550 0    50   ~ 0
+D6
+Text Label 6450 3650 0    50   ~ 0
+D5
+Text Label 6450 3750 0    50   ~ 0
+D4
+Text Label 6450 3850 0    50   ~ 0
+D3
+Text Label 6450 3950 0    50   ~ 0
+D2
+Text Label 6450 4050 0    50   ~ 0
+D1
+Text Label 6450 4150 0    50   ~ 0
+D0
+Entry Wire Line
+	6550 3450 6650 3550
+Entry Wire Line
+	6550 3550 6650 3650
+Entry Wire Line
+	6550 3650 6650 3750
+Entry Wire Line
+	6550 3750 6650 3850
+Entry Wire Line
+	6550 3850 6650 3950
+Entry Wire Line
+	6550 3950 6650 4050
+Entry Wire Line
+	6550 4050 6650 4150
+Entry Wire Line
+	6550 4150 6650 4250
+Text Label 6500 9150 0    50   ~ 0
+R\~W~
+Text Label 6450 6700 0    50   ~ 0
+R\~W~
+Wire Wire Line
+	7350 9150 7250 9150
+Wire Wire Line
+	7250 9150 7250 9250
+Wire Wire Line
+	7250 9250 6450 9250
+Wire Wire Line
+	7350 9450 6450 9450
+Wire Wire Line
+	7350 9600 6850 9600
+Wire Wire Line
+	6850 6800 6850 9600
+Wire Wire Line
+	7350 9300 7300 9300
+Wire Wire Line
+	7300 9300 7300 9350
+Wire Wire Line
+	7300 9350 6450 9350
+Wire Wire Line
+	6450 8950 7050 8950
+Wire Wire Line
+	7050 8950 7050 6500
+Wire Wire Line
+	7050 6500 6450 6500
+Wire Wire Line
+	7050 6500 7050 4250
+Connection ~ 7050 6500
+Wire Wire Line
+	7050 4250 7700 4250
+Wire Wire Line
+	6450 4250 6550 4250
+Wire Wire Line
+	6550 4250 6550 4300
+Wire Wire Line
+	6550 4300 6700 4300
+Connection ~ 7050 4250
+Text GLabel 7700 4250 2    50   Output ~ 0
+PHI2
+Text Label 6450 4250 0    20   ~ 0
+PH2_FB
+Text Label 6450 6500 0    50   ~ 0
+PHI2
+Text Label 6500 8950 0    50   ~ 0
+PHI2
+Text GLabel 7700 4650 2    50   Input ~ 0
+RDY
+Wire Wire Line
+	7700 4650 6450 4650
+Text GLabel 7550 6700 2    50   Output ~ 0
+R\~W~
+Wire Wire Line
+	7550 6700 6950 6700
+Text GLabel 7550 6400 2    50   Input ~ 0
+~IRQ~
+Wire Wire Line
+	7550 6400 6850 6400
+Wire Wire Line
+	6850 6400 6850 4550
+Wire Wire Line
+	6850 4550 6450 4550
+Connection ~ 6850 6400
+Wire Wire Line
+	6850 6400 6450 6400
+Text Label 6450 4550 0    50   ~ 0
+~IRQ~
+Text Label 6500 6400 0    50   ~ 0
+~IRQ~
+Text Notes 7650 7500 0    50   ~ 0
+RP4\n3.3K
+$Comp
+L C64-discrete-library:+5V-power #PWR0124
+U 1 1 605D051E
+P 8000 7000
+AR Path="/605D051E" Ref="#PWR0124"  Part="1" 
+AR Path="/5D940AF4/605D051E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0124" H 8000 6850 50  0001 C CNN
+F 1 "+5V" V 7933 6992 50  0000 L CNN
+F 2 "" H 8000 7000 50  0001 C CNN
+F 3 "" H 8000 7000 50  0001 C CNN
+	1    8000 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 7000 7950 7000
+Wire Wire Line
+	7850 7100 7950 7100
+Wire Wire Line
+	7950 7100 7950 7000
+Connection ~ 7950 7000
+Wire Wire Line
+	7950 7000 8000 7000
+Wire Wire Line
+	7950 7200 7950 7100
+Connection ~ 7950 7100
+Wire Wire Line
+	7850 7300 7950 7300
+Wire Wire Line
+	7950 7300 7950 7200
+Connection ~ 7950 7200
+Wire Wire Line
+	7650 7000 7450 7000
+Wire Wire Line
+	7650 7100 7450 7100
+Wire Wire Line
+	7650 7200 7450 7200
+Wire Wire Line
+	7650 7300 7450 7300
+Text Label 7450 7000 0    50   ~ 0
+A15
+Text Label 7450 7100 0    50   ~ 0
+A14
+Text Label 7450 7200 0    50   ~ 0
+A13
+Text Label 7450 7300 0    50   ~ 0
+A12
+Entry Wire Line
+	7350 7100 7450 7000
+Entry Wire Line
+	7350 7300 7450 7200
+Entry Wire Line
+	7350 7200 7450 7100
+Entry Wire Line
+	7350 7400 7450 7300
+$Comp
+L C64-schematics-library:R_ARRAY_9WAY_US RP4
+U 3 1 605D053A
+P 7750 7000
+F 0 "RP4" V 7628 7000 50  0001 C CNN
+F 1 "3K3 Bussed" H 8125 7125 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_9WAY" H 7750 7000 50  0001 C CNN
+F 3 "" H 7750 7000 50  0001 C CNN
+	3    7750 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_9WAY_US RP4
+U 4 1 605D0540
+P 7750 7100
+F 0 "RP4" V 7628 7100 50  0001 C CNN
+F 1 "3K3 Bussed" H 8125 7225 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_9WAY" H 7750 7100 50  0001 C CNN
+F 3 "" H 7750 7100 50  0001 C CNN
+	4    7750 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_9WAY_US RP4
+U 5 1 605D0546
+P 7750 7200
+F 0 "RP4" V 7628 7200 50  0001 C CNN
+F 1 "3K3 Bussed" H 8125 7325 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_9WAY" H 7750 7200 50  0001 C CNN
+F 3 "" H 7750 7200 50  0001 C CNN
+	5    7750 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 7200 7950 7200
+$Comp
+L C64-schematics-library:R_ARRAY_9WAY_US RP4
+U 7 1 605D054D
+P 7750 7300
+F 0 "RP4" V 7628 7300 50  0001 C CNN
+F 1 "3K3 Bussed" H 8125 7425 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_9WAY" H 7750 7300 50  0001 C CNN
+F 3 "" H 7750 7300 50  0001 C CNN
+	7    7750 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_7WAY_US RP3
+U 3 1 605D0553
+P 3000 900
+F 0 "RP3" V 3099 900 50  0001 C CNN
+F 1 "3K3 Bussed" H 3350 950 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_7WAY" H 3000 910 50  0001 C CNN
+F 3 "" H 3000 910 50  0001 C CNN
+	3    3000 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_7WAY_US RP3
+U 2 1 605D0559
+P 4950 4400
+F 0 "RP3" H 5003 4400 50  0001 L CNN
+F 1 "3K3 Bussed" H 5300 4450 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_7WAY" H 4950 4410 50  0001 C CNN
+F 3 "" H 4950 4410 50  0001 C CNN
+	2    4950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_7WAY_US RP3
+U 1 1 605D055F
+P 5150 10200
+F 0 "RP3" H 5075 10200 50  0001 R CNN
+F 1 "3K3 Bussed" H 5500 10250 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_7WAY" H 5150 10210 50  0001 C CNN
+F 3 "" H 5150 10210 50  0001 C CNN
+	1    5150 10200
+	-1   0    0    1   
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_7WAY_US RP3
+U 4 1 605D0565
+P 1800 7700
+F 0 "RP3" H 1853 7700 50  0001 L CNN
+F 1 "3K3 Bussed" H 2150 7750 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_7WAY" H 1800 7710 50  0001 C CNN
+F 3 "" H 1800 7710 50  0001 C CNN
+	4    1800 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_7WAY_US RP3
+U 5 1 605D056B
+P 1900 7700
+F 0 "RP3" H 1952 7700 50  0001 L CNN
+F 1 "3K3 Bussed" H 2250 7750 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_7WAY" H 1900 7710 50  0001 C CNN
+F 3 "" H 1900 7710 50  0001 C CNN
+	5    1900 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_7WAY_US RP3
+U 6 1 605D0571
+P 2000 7700
+F 0 "RP3" H 2052 7700 50  0001 L CNN
+F 1 "3K3 Bussed" H 2350 7750 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_7WAY" H 2000 7710 50  0001 C CNN
+F 3 "" H 2000 7710 50  0001 C CNN
+	6    2000 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_ARRAY_7WAY_US RP3
+U 7 1 605D0577
+P 2100 7700
+F 0 "RP3" H 2153 7700 50  0001 L CNN
+F 1 "3K3 Bussed" H 2450 7750 50  0001 C CNN
+F 2 "C64-pcb-library:RP_ARRAY_7WAY" H 2100 7710 50  0001 C CNN
+F 3 "" H 2100 7710 50  0001 C CNN
+	7    2100 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1000 7750 2400
+Wire Wire Line
+	7850 2300 7850 900 
+Wire Wire Line
+	5750 1150 5750 800 
+Wire Wire Line
+	5750 800  7950 800 
+Wire Wire Line
+	4300 1000 7750 1000
+Wire Wire Line
+	5650 1150 5650 900 
+Wire Wire Line
+	5650 900  7850 900 
+Wire Wire Line
+	5850 1150 5850 700 
+Wire Wire Line
+	5850 700  8050 700 
+Text Label 5950 700  0    50   ~ 0
+CASS_MOTOR
+Text Label 5950 800  0    50   ~ 0
+CASS_SENSE
+Text Label 5950 900  0    50   ~ 0
+CASS_WRT
+Wire Wire Line
+	5750 800  5600 800 
+Connection ~ 5750 800 
+$Comp
+L C64-schematics-library:R_US_CUSTOM R1
+U 1 1 605D058B
+P 5500 800
+AR Path="/605D058B" Ref="R1"  Part="1" 
+AR Path="/5D940AF4/605D058B" Ref="R?"  Part="1" 
+F 0 "R1" V 5565 831 50  0000 L CNN
+F 1 "3K3" V 5564 656 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 5500 800 50  0001 C CNN
+F 3 "" H 5500 800 50  0001 C CNN
+	1    5500 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0125
+U 1 1 605D0591
+P 5400 800
+AR Path="/605D0591" Ref="#PWR0125"  Part="1" 
+AR Path="/5D940AF4/605D0591" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0125" H 5400 650 50  0001 C CNN
+F 1 "+5V" V 5400 950 50  0000 L CNN
+F 2 "" H 5400 800 50  0001 C CNN
+F 3 "" H 5400 800 50  0001 C CNN
+	1    5400 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R4
+U 1 1 605D0597
+P 8750 1650
+AR Path="/605D0597" Ref="R4"  Part="1" 
+AR Path="/5D940AF4/605D0597" Ref="R?"  Part="1" 
+F 0 "R4" V 8600 1600 50  0000 L CNN
+F 1 "1K" V 8681 1601 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 8750 1650 50  0001 C CNN
+F 3 "" H 8750 1650 50  0001 C CNN
+	1    8750 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 1650 8650 1650
+$Comp
+L C64-schematics-library:GND_SMALL #U0121
+U 1 1 605D05B5
+P 9300 1950
+AR Path="/605D05B5" Ref="#U0121"  Part="1" 
+AR Path="/5D940AF4/605D05B5" Ref="U?"  Part="1" 
+F 0 "#U0121" H 9300 1950 50  0001 C CNN
+F 1 "GND_SMALL" H 9300 1950 50  0001 C CNN
+F 2 "" H 9300 1950 50  0001 C CNN
+F 3 "" H 9300 1950 50  0001 C CNN
+	1    9300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1950 9300 1850
+$Comp
+L C64-discrete-library:D_Zener_Small_ALT CR2
+U 1 1 605D05BC
+P 9550 1650
+F 0 "CR2" V 9567 1707 50  0000 L CNN
+F 1 "6.8V" V 9638 1712 50  0000 L CNN
+F 2 "C64-pcb-library:ZENER_12.7mm" V 9550 1650 50  0001 C CNN
+F 3 "~" V 9550 1650 50  0001 C CNN
+	1    9550 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0122
+U 1 1 605D05C3
+P 9550 1750
+AR Path="/605D05C3" Ref="#U0122"  Part="1" 
+AR Path="/5D940AF4/605D05C3" Ref="U?"  Part="1" 
+F 0 "#U0122" H 9550 1750 50  0001 C CNN
+F 1 "GND_SMALL" H 9550 1750 50  0001 C CNN
+F 2 "" H 9550 1750 50  0001 C CNN
+F 3 "" H 9550 1750 50  0001 C CNN
+	1    9550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1450 9550 1450
+Wire Wire Line
+	9550 1450 9550 1550
+$Comp
+L C64-schematics-library:R_US_CUSTOM R2
+U 1 1 605D05CB
+P 9300 1250
+AR Path="/605D05CB" Ref="R2"  Part="1" 
+AR Path="/5D940AF4/605D05CB" Ref="R?"  Part="1" 
+F 0 "R2" H 9144 1282 50  0000 L CNN
+F 1 "470" H 9100 1200 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 9300 1250 50  0001 C CNN
+F 3 "" H 9300 1250 50  0001 C CNN
+	1    9300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1150 9300 1050
+Wire Wire Line
+	9300 1050 9600 1050
+Connection ~ 9550 1450
+Wire Wire Line
+	9300 1450 9300 1350
+Connection ~ 9600 1050
+Text Notes 11700 2850 1    79   Italic 0
+(6-PIN MALE EDGE)
+Text Notes 11550 2550 1    79   Italic 0
+CASSETTE
+Wire Wire Line
+	7950 2200 10000 2200
+Wire Wire Line
+	8850 2300 7850 2300
+Text Label 10650 2200 0    50   ~ 0
+CASS_SENSE
+Text Label 10650 2300 0    50   ~ 0
+CASS_WRT'
+Wire Wire Line
+	11150 2300 9200 2300
+$Comp
+L C64-discrete-library:C_Small C1
+U 1 1 605D05F9
+P 10950 2600
+AR Path="/605D05F9" Ref="C1"  Part="1" 
+AR Path="/5D940AF4/605D05F9" Ref="C?"  Part="1" 
+F 0 "C1" H 10831 2628 50  0000 C CNN
+F 1 ".1" H 10832 2560 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 10950 2600 50  0001 C CNN
+F 3 "~" H 10950 2600 50  0001 C CNN
+	1    10950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0123
+U 1 1 605D05FF
+P 11150 2700
+AR Path="/605D05FF" Ref="#U0123"  Part="1" 
+AR Path="/5D940AF4/605D05FF" Ref="U?"  Part="1" 
+F 0 "#U0123" H 11150 2700 50  0001 C CNN
+F 1 "GND_SMALL" H 11150 2700 50  0001 C CNN
+F 2 "" H 11150 2700 50  0001 C CNN
+F 3 "" H 11150 2700 50  0001 C CNN
+	1    11150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0126
+U 1 1 605D0606
+P 10700 2500
+AR Path="/605D0606" Ref="#PWR0126"  Part="1" 
+AR Path="/5D940AF4/605D0606" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0126" H 10700 2350 50  0001 C CNN
+F 1 "+5V" V 10700 2600 50  0000 L CNN
+F 2 "" H 10700 2500 50  0001 C CNN
+F 3 "" H 10700 2500 50  0001 C CNN
+	1    10700 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0124
+U 1 1 605D060C
+P 10950 2700
+AR Path="/605D060C" Ref="#U0124"  Part="1" 
+AR Path="/5D940AF4/605D060C" Ref="U?"  Part="1" 
+F 0 "#U0124" H 10950 2700 50  0001 C CNN
+F 1 "GND_SMALL" H 10950 2700 50  0001 C CNN
+F 2 "" H 10950 2700 50  0001 C CNN
+F 3 "" H 10950 2700 50  0001 C CNN
+	1    10950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 2600 11150 2700
+Text Label 10650 2400 0    50   ~ 0
+CASS_RD
+Wire Wire Line
+	7750 2400 9600 2400
+$Comp
+L C64-schematics-library:CASSETTE_PORT_CON CN3
+U 1 1 605D061C
+P 11450 2050
+F 0 "CN3" V 11800 1700 118 0000 L CNN
+F 1 "CASSETTE_PORT_CON" H 11325 1350 50  0001 C CNN
+F 2 "C64-pcb-library:EDGE_CON_12P_TAPE" H 11450 2050 50  0001 C CNN
+F 3 "" H 11450 2050 50  0001 C CNN
+	1    11450 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 800  7950 2200
+Wire Wire Line
+	8050 700  8050 1650
+$Comp
+L C64-schematics-library:+9V_UNREG #PWR0127
+U 1 1 605D062E
+P 9600 1050
+F 0 "#PWR0127" H 9600 900 50  0001 C CNN
+F 1 "+9V_UNREG" H 9600 1249 50  0000 C CNN
+F 2 "" H 9600 1000 50  0001 C CNN
+F 3 "" H 9600 850 50  0001 C CNN
+	1    9600 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1050 10250 1050
+$Comp
+L C64-discrete-library:BJT_TIP41 Q1
+U 1 1 605D0635
+P 10150 1450
+F 0 "Q1" H 10341 1496 50  0000 L CNN
+F 1 "TP29B/2SD880" H 10341 1405 50  0000 L CNN
+F 2 "C64-pcb-library:TO-220-3_Horizontal_TabDown_250407" H 10400 1375 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 10150 1450 50  0001 L CNN
+	1    10150 1450
+	1    0    0    -1  
+$EndComp
+Text Label 10850 2500 0    50   ~ 0
+5V_FB3
+Wire Wire Line
+	6450 1350 7050 1350
+Wire Wire Line
+	7050 1350 7050 2650
+Wire Wire Line
+	7050 2650 7800 2650
+Wire Wire Line
+	6450 1450 7000 1450
+Wire Wire Line
+	7000 1450 7000 2850
+Wire Wire Line
+	7000 2850 7650 2850
+Wire Wire Line
+	6450 1550 6950 1550
+Wire Wire Line
+	6950 1550 6950 3050
+Wire Wire Line
+	6950 3050 7550 3050
+Wire Wire Line
+	6450 1650 6900 1650
+Wire Wire Line
+	6900 1650 6900 3250
+Wire Wire Line
+	6900 3250 7450 3250
+Text Label 6550 1450 0    50   ~ 0
+~LORAM~
+Text Label 6550 1550 0    50   ~ 0
+~HIRAM~
+Text Label 6550 1650 0    50   ~ 0
+~CHAREN~
+Text GLabel 7800 2650 2    50   Input ~ 0
+CAEC
+Text GLabel 7800 2850 2    50   Input ~ 0
+~LORAM~
+Text GLabel 7800 3050 2    50   Input ~ 0
+~HIRAM~
+Text GLabel 7800 3250 2    50   Input ~ 0
+~CHAREN~
+$Comp
+L C64-schematics-library:R_US_CUSTOM R43
+U 1 1 605D064F
+P 7450 3450
+AR Path="/605D064F" Ref="R43"  Part="1" 
+AR Path="/5D940AF4/605D064F" Ref="R?"  Part="1" 
+F 0 "R43" V 7527 3515 50  0000 L CNN
+F 1 "3K3" V 7526 3321 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 7450 3450 50  0001 C CNN
+F 3 "" H 7450 3450 50  0001 C CNN
+	1    7450 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R44
+U 1 1 605D0655
+P 7550 3450
+AR Path="/605D0655" Ref="R44"  Part="1" 
+AR Path="/5D940AF4/605D0655" Ref="R?"  Part="1" 
+F 0 "R44" H 7477 3725 50  0000 L CNN
+F 1 "3K3" H 7475 3794 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 7550 3450 50  0001 C CNN
+F 3 "" H 7550 3450 50  0001 C CNN
+	1    7550 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R45
+U 1 1 605D065B
+P 7650 3450
+AR Path="/605D065B" Ref="R45"  Part="1" 
+AR Path="/5D940AF4/605D065B" Ref="R?"  Part="1" 
+F 0 "R45" H 7462 3431 50  0000 L CNN
+F 1 "3K3" H 7459 3502 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 7650 3450 50  0001 C CNN
+F 3 "" H 7650 3450 50  0001 C CNN
+	1    7650 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 3350 7450 3250
+Connection ~ 7450 3250
+Wire Wire Line
+	7450 3250 7800 3250
+Wire Wire Line
+	7550 3350 7550 3050
+Connection ~ 7550 3050
+Wire Wire Line
+	7550 3050 7800 3050
+Wire Wire Line
+	7650 3350 7650 2850
+Connection ~ 7650 2850
+Wire Wire Line
+	7650 2850 7800 2850
+Wire Wire Line
+	7450 3550 7450 3650
+Wire Wire Line
+	7450 3650 7550 3650
+Wire Wire Line
+	7550 3550 7550 3650
+Connection ~ 7550 3650
+Wire Wire Line
+	7550 3650 7650 3650
+Wire Wire Line
+	7650 3550 7650 3650
+Connection ~ 7650 3650
+Wire Wire Line
+	7650 3650 7800 3650
+$Comp
+L C64-discrete-library:+5V-power #PWR0128
+U 1 1 605D0672
+P 7800 3650
+AR Path="/605D0672" Ref="#PWR0128"  Part="1" 
+AR Path="/5D940AF4/605D0672" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0128" H 7800 3500 50  0001 C CNN
+F 1 "+5V" V 7733 3642 50  0000 L CNN
+F 2 "" H 7800 3650 50  0001 C CNN
+F 3 "" H 7800 3650 50  0001 C CNN
+	1    7800 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 4450 7700 4450
+$Comp
+L C64-discrete-library:Conn_01x03-Connector_Generic CN10
+U 1 1 605D067A
+P 8750 10650
+F 0 "CN10" V 8913 10876 118 0000 R CNN
+F 1 "LED_CONNECTOR" V 8572 10462 50  0001 R CNN
+F 2 "C64-pcb-library:LED_CON" H 8750 10650 50  0001 C CNN
+F 3 "~" H 8750 10650 50  0001 C CNN
+	1    8750 10650
+	0    1    1    0   
+$EndComp
+Text Notes 9232 11020 2    79   Italic 0
+LED CONNECTOR
+Wire Wire Line
+	8850 10450 8850 10400
+Wire Wire Line
+	8850 10400 8650 10400
+Wire Wire Line
+	8650 10400 8650 10450
+Connection ~ 8850 10400
+$Comp
+L C64-discrete-library:+5V-power #PWR0129
+U 1 1 605D0699
+P 8850 9800
+AR Path="/605D0699" Ref="#PWR0129"  Part="1" 
+AR Path="/5D940AF4/605D0699" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0129" H 8850 9650 50  0001 C CNN
+F 1 "+5V" H 8800 9950 50  0000 L CNN
+F 2 "" H 8850 9800 50  0001 C CNN
+F 3 "" H 8850 9800 50  0001 C CNN
+	1    8850 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R39
+U 1 1 605D069F
+P 8850 9900
+AR Path="/605D069F" Ref="R39"  Part="1" 
+AR Path="/5D940AF4/605D069F" Ref="R?"  Part="1" 
+F 0 "R39" H 8899 9930 50  0000 L CNN
+F 1 "390" H 8902 9860 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 8850 9900 50  0001 C CNN
+F 3 "" H 8850 9900 50  0001 C CNN
+	1    8850 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:L_Core_Iron L5
+U 1 1 605D06A6
+P 10800 10200
+F 0 "L5" H 10888 10246 50  0000 L CNN
+F 1 "1.2uH" H 10888 10155 50  0000 L CNN
+F 2 "C64-pcb-library:INDUCTOR_P15.24mm" H 10800 10200 50  0001 C CNN
+F 3 "~" H 10800 10200 50  0001 C CNN
+	1    10800 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:CHOKE L4
+U 1 1 605D06B2
+P 9900 10200
+F 0 "L4" H 9975 10287 50  0000 L CNN
+F 1 "CHOKE" H 9950 10300 50  0001 L CNN
+F 2 "C64-pcb-library:CHOKE" H 9900 10200 50  0001 C CNN
+F 3 "" H 9900 10200 50  0001 C CNN
+	1    9900 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 10450 9900 10450
+Wire Wire Line
+	9900 10450 9900 10350
+Wire Wire Line
+	10200 10450 10300 10450
+Wire Wire Line
+	10300 10450 10300 10350
+$Comp
+L C64-discrete-library:C_Small C20
+U 1 1 605D06BC
+P 10100 10450
+AR Path="/605D06BC" Ref="C20"  Part="1" 
+AR Path="/5D940AF4/605D06BC" Ref="C?"  Part="1" 
+F 0 "C20" V 10339 10457 50  0000 C CNN
+F 1 ".22" V 10273 10447 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 10100 10450 50  0001 C CNN
+F 3 "~" H 10100 10450 50  0001 C CNN
+	1    10100 10450
+	0    -1   -1   0   
+$EndComp
+Text Notes 10009 10382 0    50   ~ 0
+100V
+Text Notes 10856 11013 2    79   Italic 0
+POWER INPUT
+Text Notes 11055 11148 2    79   Italic 0
+(7PIN MALE DIN)
+$Comp
+L C64-schematics-library:POWER_CON CN7
+U 1 1 605D06C8
+P 10550 10750
+F 0 "CN7" H 11074 10539 79  0000 C CNN
+F 1 "POWER_CON" H 10550 10750 50  0001 C CNN
+F 2 "C64-pcb-library:POWER_CON_D7_250407" H 10550 10750 50  0001 C CNN
+F 3 "" H 10550 10750 50  0001 C CNN
+	1    10550 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 10650 9900 10450
+Connection ~ 9900 10450
+Connection ~ 10300 10450
+Wire Wire Line
+	11000 10650 11100 10650
+Connection ~ 11200 10650
+Wire Wire Line
+	11200 10650 11200 10400
+Connection ~ 11100 10650
+Wire Wire Line
+	11100 10650 11200 10650
+Wire Wire Line
+	8150 9900 8150 9150
+Connection ~ 8150 9900
+Text Label 10300 9500 1    50   ~ 0
+9VAC~~
+Text Notes 10800 10550 1    50   ~ 0
++5
+$Comp
+L C64-discrete-library:Fuse F1
+U 1 1 605D0718
+P 9900 9400
+F 0 "F1" H 9750 9469 50  0000 L CNN
+F 1 "1A" H 9750 9393 50  0000 L CNN
+F 2 "C64-pcb-library:FUSE" V 9830 9400 50  0001 C CNN
+F 3 "~" H 9900 9400 50  0001 C CNN
+	1    9900 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 9250 8250 10000
+Wire Wire Line
+	10800 9150 11000 9150
+Wire Wire Line
+	10800 9150 10800 9050
+$Comp
+L C64-discrete-library:CP_Small C91
+U 1 1 605D0730
+P 11000 9300
+F 0 "C91" H 11077 9355 50  0000 L CNN
+F 1 "100uF" H 11077 9284 50  0000 L CNN
+F 2 "C64-pcb-library:CAP_ELYT_RADIAL_P5.08mm" H 11000 9300 50  0001 C CNN
+F 3 "~" H 11000 9300 50  0001 C CNN
+	1    11000 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 9200 11000 9150
+$Comp
+L C64-discrete-library:+5V-power #PWR0130
+U 1 1 605D073F
+P 10800 9050
+AR Path="/605D073F" Ref="#PWR0130"  Part="1" 
+AR Path="/5D940AF4/605D073F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0130" H 10800 8900 50  0001 C CNN
+F 1 "+5V" H 10750 9200 50  0000 L CNN
+F 2 "" H 10800 9050 50  0001 C CNN
+F 3 "" H 10800 9050 50  0001 C CNN
+	1    10800 9050
+	1    0    0    -1  
+$EndComp
+Text Notes 11081 9421 0    50   ~ 0
+16V
+$Comp
+L C64-schematics-library:7805 VR2
+U 1 1 605D074B
+P 8850 8750
+F 0 "VR2" H 8844 8927 79  0000 C CNN
+F 1 "7805" H 8850 8750 79  0000 C CNN
+F 2 "C64-pcb-library:VREG_TO-220-3_Horizontal_TabDown" H 8850 8900 50  0001 C CNN
+F 3 "" H 8850 8900 50  0001 C CNN
+	1    8850 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:7812 VR1
+U 1 1 605D0751
+P 8850 7950
+F 0 "VR1" H 8853 8115 79  0000 C CNN
+F 1 "7812" H 8850 7950 79  0000 C CNN
+F 2 "C64-pcb-library:VREG_TO-220-3_Horizontal_TabDown" H 8850 7950 50  0001 C CNN
+F 3 "" H 8850 7950 50  0001 C CNN
+	1    8850 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:BRIDGE_RECTIFIER CR4
+U 1 1 605D0757
+P 9900 8750
+F 0 "CR4" H 10050 8900 50  0000 L CNN
+F 1 "BRIDGE_RECTIFIER" H 9900 7850 50  0001 C CNN
+F 2 "C64-pcb-library:BRIDGE_RECTIFIER" H 9900 8750 50  0001 C CNN
+F 3 "" H 9900 8750 50  0001 C CNN
+	1    9900 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 8500 9900 8500
+Wire Wire Line
+	10300 8500 10300 9150
+Wire Wire Line
+	10100 8750 10100 8850
+Wire Wire Line
+	9900 8500 9900 8550
+Wire Wire Line
+	9900 8950 9900 9250
+Wire Wire Line
+	10300 8500 10300 7950
+Connection ~ 10300 8500
+$Comp
+L C64-discrete-library:D_1N4001 CR6
+U 1 1 605D076B
+P 9900 8150
+F 0 "CR6" V 9913 8229 50  0000 L CNN
+F 1 "1N4001" V 10000 8200 50  0000 L CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" H 9900 7975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9900 8150 50  0001 C CNN
+	1    9900 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:CP_Small C90
+U 1 1 605D0771
+P 10100 7950
+F 0 "C90" V 10329 7876 50  0000 L CNN
+F 1 "470uF" V 10263 7829 50  0000 L CNN
+F 2 "C64-pcb-library:LARGE_ELECTROLYTIC_AXIAL_TH" H 10100 7950 50  0001 C CNN
+F 3 "~" H 10100 7950 50  0001 C CNN
+	1    10100 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10300 7950 10200 7950
+Wire Wire Line
+	10000 7950 9900 7950
+Wire Wire Line
+	9900 8000 9900 7950
+$Comp
+L C64-discrete-library:D_1N4001 CR5
+U 1 1 605D077A
+P 9750 7950
+F 0 "CR5" H 9750 8166 50  0000 C CNN
+F 1 "1N4001" H 9750 8075 50  0000 C CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" H 9750 7775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9750 7950 50  0001 C CNN
+	1    9750 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 9150 10300 9150
+Wire Wire Line
+	8250 9250 9900 9250
+Wire Wire Line
+	9900 8350 9900 8300
+Wire Wire Line
+	9600 7950 9450 7950
+Text Notes 10169 7885 2    50   ~ 0
+50V
+$Comp
+L C64-discrete-library:CP_Small C88
+U 1 1 605D0787
+P 9450 8100
+F 0 "C88" H 9557 8096 50  0000 L CNN
+F 1 "1000uF" H 9506 8022 50  0000 L CNN
+F 2 "C64-pcb-library:LARGE_ELECTROLYTIC_AXIAL_TH" H 9450 8100 50  0001 C CNN
+F 3 "~" H 9450 8100 50  0001 C CNN
+	1    9450 8100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9450 7950
+Wire Wire Line
+	9450 7950 9300 7950
+Text Notes 9711 8289 2    50   ~ 0
+25V
+Wire Wire Line
+	9450 8000 9450 7950
+Wire Wire Line
+	9450 8200 9450 8250
+$Comp
+L C64-discrete-library:CP_Small C19
+U 1 1 605D0798
+P 9450 8900
+F 0 "C19" H 9561 8892 50  0000 L CNN
+F 1 "2200uF" H 9506 8822 50  0000 L CNN
+F 2 "C64-pcb-library:LARGE_ELECTROLYTIC_AXIAL_TH" H 9450 8900 50  0001 C CNN
+F 3 "~" H 9450 8900 50  0001 C CNN
+	1    9450 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 8800 9450 8750
+Connection ~ 9450 8750
+Wire Wire Line
+	9450 8750 9700 8750
+Wire Wire Line
+	9450 9050 9450 9000
+Wire Wire Line
+	9150 8750 9150 8350
+Connection ~ 9150 8750
+Connection ~ 9150 8350
+Wire Wire Line
+	9150 8750 9300 8750
+Wire Wire Line
+	9150 8350 9900 8350
+$Comp
+L C64-discrete-library:C_Small C95
+U 1 1 605D07AD
+P 9300 8900
+AR Path="/605D07AD" Ref="C95"  Part="1" 
+AR Path="/5D940AF4/605D07AD" Ref="C?"  Part="1" 
+F 0 "C95" H 9153 8961 50  0000 C CNN
+F 1 ".1" H 9162 8886 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 9300 8900 50  0001 C CNN
+F 3 "~" H 9300 8900 50  0001 C CNN
+	1    9300 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 8800 9300 8750
+Connection ~ 9300 8750
+Wire Wire Line
+	9300 8750 9450 8750
+Wire Wire Line
+	9300 9050 9300 9000
+$Comp
+L C64-discrete-library:C_Small C89
+U 1 1 605D07BD
+P 9300 8100
+AR Path="/605D07BD" Ref="C89"  Part="1" 
+AR Path="/5D940AF4/605D07BD" Ref="C?"  Part="1" 
+F 0 "C89" H 9153 8161 50  0000 C CNN
+F 1 ".1" H 9162 8086 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 9300 8100 50  0001 C CNN
+F 3 "~" H 9300 8100 50  0001 C CNN
+	1    9300 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 8000 9300 7950
+Connection ~ 9300 7950
+Wire Wire Line
+	9300 7950 9150 7950
+Wire Wire Line
+	9300 8250 9300 8200
+Wire Wire Line
+	8850 8150 8850 8250
+Wire Wire Line
+	8850 8950 8850 9050
+$Comp
+L C64-discrete-library:C_Small C59
+U 1 1 605D07ED
+P 8250 8100
+AR Path="/605D07ED" Ref="C59"  Part="1" 
+AR Path="/5D940AF4/605D07ED" Ref="C?"  Part="1" 
+F 0 "C59" H 8103 8161 50  0000 C CNN
+F 1 ".1" H 8112 8086 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 8250 8100 50  0001 C CNN
+F 3 "~" H 8250 8100 50  0001 C CNN
+	1    8250 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 8000 8250 7950
+Connection ~ 8250 7950
+Wire Wire Line
+	8250 7950 7950 7950
+Wire Wire Line
+	8250 8200 8250 8250
+Wire Wire Line
+	7850 8350 9150 8350
+$Comp
+L C64-discrete-library:+12V-power #PWR0131
+U 1 1 605D07FE
+P 7950 7950
+F 0 "#PWR0131" H 7950 7800 50  0001 C CNN
+F 1 "+12V" V 8024 7926 50  0000 L CNN
+F 2 "" H 7950 7950 50  0001 C CNN
+F 3 "" H 7950 7950 50  0001 C CNN
+	1    7950 7950
+	0    -1   -1   0   
+$EndComp
+Text Label 7850 8350 0    50   ~ 0
++9V_UNREG
+$Comp
+L C64-discrete-library:C_Small C103
+U 1 1 605D0805
+P 8250 8900
+AR Path="/605D0805" Ref="C103"  Part="1" 
+AR Path="/5D940AF4/605D0805" Ref="C?"  Part="1" 
+F 0 "C103" H 8076 8933 50  0000 C CNN
+F 1 ".1" H 8098 8860 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 8250 8900 50  0001 C CNN
+F 3 "~" H 8250 8900 50  0001 C CNN
+	1    8250 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 8750 8250 8800
+Wire Wire Line
+	8250 9000 8250 9050
+Wire Wire Line
+	8250 8750 7850 8750
+Connection ~ 8250 8750
+Text Label 7850 8750 0    50   ~ 0
+CAN+5V
+Text Notes 9704 9090 2    50   ~ 0
+16V
+Wire Wire Line
+	11300 10400 11200 10400
+Wire Wire Line
+	11300 10400 11300 10500
+Text Label 8750 10350 1    31   ~ 0
+GND_LED
+Text Label 8850 10350 1    31   ~ 0
+LED+
+Text Label 1550 4000 0    31   ~ 0
+5V_joyport
+Text Label 9500 9250 0    50   ~ 0
+'9VAC~~
+Text Label 10300 10650 1    50   ~ 0
+9VAC
+Wire Wire Line
+	10900 10650 10800 10650
+Connection ~ 14400 6050
+Wire Wire Line
+	14400 6050 14700 6050
+Wire Wire Line
+	7150 6050 14400 6050
+Text GLabel 7700 4450 2    50   Output ~ 0
+PHI0
+Wire Wire Line
+	4950 10500 4950 10950
+Wire Wire Line
+	4950 10950 5150 10950
+Connection ~ 4950 10500
+Text GLabel 5150 10950 2    50   Input ~ 0
+~NMI~
+Text Notes 4800 11100 0    50   ~ 0
+To Cartridge Expansion
+Wire Wire Line
+	6450 8800 6650 8800
+Wire Wire Line
+	6450 8700 6650 8700
+Wire Wire Line
+	6450 8600 6650 8600
+Wire Wire Line
+	6450 8500 6650 8500
+Wire Bus Line
+	7350 8900 6750 8900
+Wire Bus Line
+	7350 7400 6750 7400
+Entry Wire Line
+	6650 8800 6750 8900
+Entry Wire Line
+	6650 8700 6750 8800
+Entry Wire Line
+	6650 8600 6750 8700
+Entry Wire Line
+	6650 8500 6750 8600
+Wire Bus Line
+	6750 5900 6800 5900
+Wire Bus Line
+	6800 6350 6750 6350
+Wire Bus Line
+	6750 6350 6750 7400
+Connection ~ 6750 7400
+Text GLabel 7350 8400 2    39   BiDi ~ 0
+D[0..7]
+Wire Wire Line
+	6400 10600 6400 10500
+$Comp
+L C64-schematics-library:GND_SMALL #U0153
+U 1 1 610B153F
+P 11650 7950
+AR Path="/610B153F" Ref="#U0153"  Part="1" 
+AR Path="/5D940AF4/610B153F" Ref="#U?"  Part="1" 
+F 0 "#U0153" H 11650 7950 50  0001 C CNN
+F 1 "GND_SMALL" H 11650 7950 50  0001 C CNN
+F 2 "" H 11650 7950 50  0001 C CNN
+F 3 "" H 11650 7950 50  0001 C CNN
+	1    11650 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0154
+U 1 1 6111888F
+P 12450 7050
+AR Path="/6111888F" Ref="#U0154"  Part="1" 
+AR Path="/5D940AF4/6111888F" Ref="#U?"  Part="1" 
+F 0 "#U0154" H 12450 7050 50  0001 C CNN
+F 1 "GND_SMALL" H 12450 7050 50  0001 C CNN
+F 2 "" H 12450 7050 50  0001 C CNN
+F 3 "" H 12450 7050 50  0001 C CNN
+	1    12450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0155
+U 1 1 6117FCA8
+P 12350 7950
+AR Path="/6117FCA8" Ref="#U0155"  Part="1" 
+AR Path="/5D940AF4/6117FCA8" Ref="#U?"  Part="1" 
+F 0 "#U0155" H 12350 7950 50  0001 C CNN
+F 1 "GND_SMALL" H 12350 7950 50  0001 C CNN
+F 2 "" H 12350 7950 50  0001 C CNN
+F 3 "" H 12350 7950 50  0001 C CNN
+	1    12350 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0156
+U 1 1 611E7A80
+P 11450 7450
+AR Path="/611E7A80" Ref="#U0156"  Part="1" 
+AR Path="/5D940AF4/611E7A80" Ref="#U?"  Part="1" 
+F 0 "#U0156" H 11450 7450 50  0001 C CNN
+F 1 "GND_SMALL" H 11450 7450 50  0001 C CNN
+F 2 "" H 11450 7450 50  0001 C CNN
+F 3 "" H 11450 7450 50  0001 C CNN
+	1    11450 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0158
+U 1 1 612B9A18
+P 11000 9400
+AR Path="/612B9A18" Ref="#U0158"  Part="1" 
+AR Path="/5D940AF4/612B9A18" Ref="#U?"  Part="1" 
+F 0 "#U0158" H 11000 9400 50  0001 C CNN
+F 1 "GND_SMALL" H 11000 9400 50  0001 C CNN
+F 2 "" H 11000 9400 50  0001 C CNN
+F 3 "" H 11000 9400 50  0001 C CNN
+	1    11000 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0159
+U 1 1 61321152
+P 11300 10500
+AR Path="/61321152" Ref="#U0159"  Part="1" 
+AR Path="/5D940AF4/61321152" Ref="#U?"  Part="1" 
+F 0 "#U0159" H 11300 10500 50  0001 C CNN
+F 1 "GND_SMALL" H 11300 10500 50  0001 C CNN
+F 2 "" H 11300 10500 50  0001 C CNN
+F 3 "" H 11300 10500 50  0001 C CNN
+	1    11300 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0162
+U 1 1 614C95D7
+P 8250 9050
+AR Path="/614C95D7" Ref="#U0162"  Part="1" 
+AR Path="/5D940AF4/614C95D7" Ref="#U?"  Part="1" 
+F 0 "#U0162" H 8250 9050 50  0001 C CNN
+F 1 "GND_SMALL" H 8250 9050 50  0001 C CNN
+F 2 "" H 8250 9050 50  0001 C CNN
+F 3 "" H 8250 9050 50  0001 C CNN
+	1    8250 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0164
+U 1 1 615988F5
+P 8850 9050
+AR Path="/615988F5" Ref="#U0164"  Part="1" 
+AR Path="/5D940AF4/615988F5" Ref="#U?"  Part="1" 
+F 0 "#U0164" H 8850 9050 50  0001 C CNN
+F 1 "GND_SMALL" H 8850 9050 50  0001 C CNN
+F 2 "" H 8850 9050 50  0001 C CNN
+F 3 "" H 8850 9050 50  0001 C CNN
+	1    8850 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0165
+U 1 1 616002CB
+P 9300 9050
+AR Path="/616002CB" Ref="#U0165"  Part="1" 
+AR Path="/5D940AF4/616002CB" Ref="#U?"  Part="1" 
+F 0 "#U0165" H 9300 9050 50  0001 C CNN
+F 1 "GND_SMALL" H 9300 9050 50  0001 C CNN
+F 2 "" H 9300 9050 50  0001 C CNN
+F 3 "" H 9300 9050 50  0001 C CNN
+	1    9300 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0166
+U 1 1 61667C34
+P 9450 9050
+AR Path="/61667C34" Ref="#U0166"  Part="1" 
+AR Path="/5D940AF4/61667C34" Ref="#U?"  Part="1" 
+F 0 "#U0166" H 9450 9050 50  0001 C CNN
+F 1 "GND_SMALL" H 9450 9050 50  0001 C CNN
+F 2 "" H 9450 9050 50  0001 C CNN
+F 3 "" H 9450 9050 50  0001 C CNN
+	1    9450 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0167
+U 1 1 616D02A3
+P 10100 8850
+AR Path="/616D02A3" Ref="#U0167"  Part="1" 
+AR Path="/5D940AF4/616D02A3" Ref="#U?"  Part="1" 
+F 0 "#U0167" H 10100 8850 50  0001 C CNN
+F 1 "GND_SMALL" H 10100 8850 50  0001 C CNN
+F 2 "" H 10100 8850 50  0001 C CNN
+F 3 "" H 10100 8850 50  0001 C CNN
+	1    10100 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0168
+U 1 1 6173B633
+P 8250 8250
+AR Path="/6173B633" Ref="#U0168"  Part="1" 
+AR Path="/5D940AF4/6173B633" Ref="#U?"  Part="1" 
+F 0 "#U0168" H 8250 8250 50  0001 C CNN
+F 1 "GND_SMALL" H 8250 8250 50  0001 C CNN
+F 2 "" H 8250 8250 50  0001 C CNN
+F 3 "" H 8250 8250 50  0001 C CNN
+	1    8250 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0170
+U 1 1 6180A8E4
+P 8850 8250
+AR Path="/6180A8E4" Ref="#U0170"  Part="1" 
+AR Path="/5D940AF4/6180A8E4" Ref="#U?"  Part="1" 
+F 0 "#U0170" H 8850 8250 50  0001 C CNN
+F 1 "GND_SMALL" H 8850 8250 50  0001 C CNN
+F 2 "" H 8850 8250 50  0001 C CNN
+F 3 "" H 8850 8250 50  0001 C CNN
+	1    8850 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0171
+U 1 1 61872283
+P 9300 8250
+AR Path="/61872283" Ref="#U0171"  Part="1" 
+AR Path="/5D940AF4/61872283" Ref="#U?"  Part="1" 
+F 0 "#U0171" H 9300 8250 50  0001 C CNN
+F 1 "GND_SMALL" H 9300 8250 50  0001 C CNN
+F 2 "" H 9300 8250 50  0001 C CNN
+F 3 "" H 9300 8250 50  0001 C CNN
+	1    9300 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0172
+U 1 1 618D9B52
+P 9450 8250
+AR Path="/618D9B52" Ref="#U0172"  Part="1" 
+AR Path="/5D940AF4/618D9B52" Ref="#U?"  Part="1" 
+F 0 "#U0172" H 9450 8250 50  0001 C CNN
+F 1 "GND_SMALL" H 9450 8250 50  0001 C CNN
+F 2 "" H 9450 8250 50  0001 C CNN
+F 3 "" H 9450 8250 50  0001 C CNN
+	1    9450 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0177
+U 1 1 61AF83AD
+P 2850 2100
+AR Path="/61AF83AD" Ref="#U0177"  Part="1" 
+AR Path="/5D940AF4/61AF83AD" Ref="#U?"  Part="1" 
+F 0 "#U0177" H 2850 2100 50  0001 C CNN
+F 1 "GND_SMALL" H 2850 2100 50  0001 C CNN
+F 2 "" H 2850 2100 50  0001 C CNN
+F 3 "" H 2850 2100 50  0001 C CNN
+	1    2850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0178
+U 1 1 61B8FAC2
+P 1900 1650
+AR Path="/61B8FAC2" Ref="#U0178"  Part="1" 
+AR Path="/5D940AF4/61B8FAC2" Ref="#U?"  Part="1" 
+F 0 "#U0178" H 1900 1650 50  0001 C CNN
+F 1 "GND_SMALL" H 1900 1650 50  0001 C CNN
+F 2 "" H 1900 1650 50  0001 C CNN
+F 3 "" H 1900 1650 50  0001 C CNN
+	1    1900 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 4700 4350 4700
+Wire Wire Line
+	5950 7100 5950 7500
+Text Label 5950 7400 1    50   ~ 0
+60Hz
+$Comp
+L C64-discrete-library:D_Small_ALT CR100
+U 1 1 6078F583
+P 4800 2550
+F 0 "CR100" H 4650 2650 50  0000 C CNN
+F 1 "D_Small_ALT" H 4850 2350 50  0001 C CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4800 2550 50  0001 C CNN
+F 3 "~" V 4800 2550 50  0001 C CNN
+	1    4800 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR102
+U 1 1 6078FB82
+P 5000 2550
+F 0 "CR102" H 4850 2650 50  0000 C CNN
+F 1 "D_Small_ALT" H 5050 2350 50  0001 C CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 5000 2550 50  0001 C CNN
+F 3 "~" V 5000 2550 50  0001 C CNN
+	1    5000 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR101
+U 1 1 6093D975
+P 4800 3250
+F 0 "CR101" H 4650 3350 50  0000 C CNN
+F 1 "D_Small_ALT" H 5150 3300 50  0001 C CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4800 3250 50  0001 C CNN
+F 3 "~" V 4800 3250 50  0001 C CNN
+	1    4800 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR103
+U 1 1 6093E0B5
+P 5000 3250
+F 0 "CR103" H 4850 3350 50  0000 C CNN
+F 1 "D_Small_ALT" H 5350 3300 50  0001 C CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 5000 3250 50  0001 C CNN
+F 3 "~" V 5000 3250 50  0001 C CNN
+	1    5000 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3350 5000 3450
+$Comp
+L C64-schematics-library:GND_SMALL #U0126
+U 1 1 60DFE6EB
+P 5000 3450
+AR Path="/60DFE6EB" Ref="#U0126"  Part="1" 
+AR Path="/5D940AF4/60DFE6EB" Ref="#U?"  Part="1" 
+F 0 "#U0126" H 5000 3450 50  0001 C CNN
+F 1 "GND_SMALL" H 5000 3450 50  0001 C CNN
+F 2 "" H 5000 3450 50  0001 C CNN
+F 3 "" H 5000 3450 50  0001 C CNN
+	1    5000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R100
+U 1 1 61414B10
+P 7200 10650
+AR Path="/61414B10" Ref="R100"  Part="1" 
+AR Path="/5D940AF4/61414B10" Ref="R?"  Part="1" 
+F 0 "R100" V 7050 10581 50  0000 L CNN
+F 1 "1K" V 7126 10575 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 7200 10650 50  0001 C CNN
+F 3 "" H 7200 10650 50  0001 C CNN
+	1    7200 10650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 10650 7300 10650
+Connection ~ 7450 10650
+Wire Wire Line
+	7100 10650 6950 10650
+Connection ~ 6950 10650
+$Comp
+L C64-discrete-library:C_Small C200
+U 1 1 617A7304
+P 7650 10850
+AR Path="/617A7304" Ref="C200"  Part="1" 
+AR Path="/5D940AF4/617A7304" Ref="C?"  Part="1" 
+F 0 "C200" H 7840 10877 50  0000 C CNN
+F 1 ".1" H 7880 10800 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 7650 10850 50  0001 C CNN
+F 3 "~" H 7650 10850 50  0001 C CNN
+	1    7650 10850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 10750 7650 10650
+Connection ~ 7650 10650
+Wire Wire Line
+	7650 10650 7700 10650
+Wire Wire Line
+	7650 10950 7650 11050
+$Comp
+L C64-schematics-library:GND_SMALL #U0127
+U 1 1 6188F8EF
+P 7650 11050
+AR Path="/6188F8EF" Ref="#U0127"  Part="1" 
+AR Path="/5D940AF4/6188F8EF" Ref="#U?"  Part="1" 
+F 0 "#U0127" H 7650 11050 50  0001 C CNN
+F 1 "GND_SMALL" H 7650 11050 50  0001 C CNN
+F 2 "" H 7650 11050 50  0001 C CNN
+F 3 "" H 7650 11050 50  0001 C CNN
+	1    7650 11050
+	1    0    0    -1  
+$EndComp
+Text Notes 7795 11014 0    50   ~ 0
+25V
+Text Label 10650 1850 0    50   ~ 0
+CASS_MOTOR'
+$Comp
+L C64-schematics-library:GND_SMALL #U0111
+U 1 1 608E5C22
+P 4250 10350
+AR Path="/608E5C22" Ref="#U0111"  Part="1" 
+AR Path="/5D940AF4/608E5C22" Ref="#U?"  Part="1" 
+F 0 "#U0111" H 4250 10350 50  0001 C CNN
+F 1 "GND_SMALL" H 4250 10350 50  0001 C CNN
+F 2 "" H 4250 10350 50  0001 C CNN
+F 3 "" H 4250 10350 50  0001 C CNN
+	1    4250 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 10300 4250 10300
+Wire Wire Line
+	4250 10300 4250 10350
+$Comp
+L C64-schematics-library:GND_SMALL #U0128
+U 1 1 607F2830
+P 10500 10000
+AR Path="/607F2830" Ref="#U0128"  Part="1" 
+AR Path="/5D940AF4/607F2830" Ref="#U?"  Part="1" 
+F 0 "#U0128" H 10500 10000 50  0001 C CNN
+F 1 "GND_SMALL" H 10500 10000 50  0001 C CNN
+F 2 "" H 10500 10000 50  0001 C CNN
+F 3 "" H 10500 10000 50  0001 C CNN
+	1    10500 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0125
+U 1 1 60D0C637
+P 8600 9900
+AR Path="/60D0C637" Ref="#U0125"  Part="1" 
+AR Path="/5D940AF4/60D0C637" Ref="#U?"  Part="1" 
+F 0 "#U0125" H 8600 9900 50  0001 C CNN
+F 1 "GND_SMALL" H 8600 9900 50  0001 C CNN
+F 2 "" H 8600 9900 50  0001 C CNN
+F 3 "" H 8600 9900 50  0001 C CNN
+	1    8600 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 9750 8600 9750
+Wire Wire Line
+	8600 9750 8600 9900
+Wire Wire Line
+	6700 4250 6700 4300
+$Sheet
+S 14900 9350 1050 450 
+U 604E5F00
+F0 "250425_sheet2" 50
+F1 "250425_sheet2.sch" 50
+$EndSheet
+$Comp
+L C64-discrete-library:C_Small C46
+U 1 1 605D0401
+P 6500 10500
+AR Path="/605D0401" Ref="C46"  Part="1" 
+AR Path="/5D940AF4/605D0401" Ref="C?"  Part="1" 
+F 0 "C46" V 6336 10498 50  0000 C CNN
+F 1 ".1" V 6400 10500 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 6500 10500 50  0001 C CNN
+F 3 "~" H 6500 10500 50  0001 C CNN
+	1    6500 10500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 7200 3850 7200
+Wire Wire Line
+	3950 7200 4850 7200
+Wire Wire Line
+	3750 7300 4750 7300
+Wire Wire Line
+	3850 1200 3850 2800
+Wire Wire Line
+	1500 9600 2150 9600
+$Comp
+L C64-discrete-library:D_Small_ALT CR104
+U 1 1 64C3C885
+P 4600 2550
+F 0 "CR104" H 4450 2650 50  0000 C CNN
+F 1 "D_Small_ALT" H 4650 2350 50  0001 C CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4600 2550 50  0001 C CNN
+F 3 "~" V 4600 2550 50  0001 C CNN
+	1    4600 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR105
+U 1 1 64C3CF2D
+P 4600 3250
+F 0 "CR105" H 4450 3350 50  0000 C CNN
+F 1 "D_Small_ALT" H 4950 3300 50  0001 C CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4600 3250 50  0001 C CNN
+F 3 "~" V 4600 3250 50  0001 C CNN
+	1    4600 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 2450 4600 2200
+Wire Wire Line
+	4600 2200 4800 2200
+Wire Wire Line
+	5000 2200 5000 2450
+Wire Wire Line
+	4800 2450 4800 2200
+Connection ~ 4800 2200
+Wire Wire Line
+	4800 2200 5000 2200
+Wire Wire Line
+	5000 2200 5000 2100
+Connection ~ 5000 2200
+$Comp
+L C64-discrete-library:+5V-power #PWR0161
+U 1 1 64E5056E
+P 5000 2100
+AR Path="/64E5056E" Ref="#PWR0161"  Part="1" 
+AR Path="/5D940AF4/64E5056E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0161" H 5000 1950 50  0001 C CNN
+F 1 "+5V" H 4883 2241 50  0000 L CNN
+F 2 "" H 5000 2100 50  0001 C CNN
+F 3 "" H 5000 2100 50  0001 C CNN
+	1    5000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2650 4600 2700
+Wire Wire Line
+	4800 3350 4800 3450
+$Comp
+L C64-schematics-library:GND_SMALL #U0104
+U 1 1 64FFC4FB
+P 4800 3450
+AR Path="/64FFC4FB" Ref="#U0104"  Part="1" 
+AR Path="/5D940AF4/64FFC4FB" Ref="#U?"  Part="1" 
+F 0 "#U0104" H 4800 3450 50  0001 C CNN
+F 1 "GND_SMALL" H 4800 3450 50  0001 C CNN
+F 2 "" H 4800 3450 50  0001 C CNN
+F 3 "" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3350 4600 3450
+$Comp
+L C64-schematics-library:GND_SMALL #U0117
+U 1 1 6506B363
+P 4600 3450
+AR Path="/6506B363" Ref="#U0117"  Part="1" 
+AR Path="/5D940AF4/6506B363" Ref="#U?"  Part="1" 
+F 0 "#U0117" H 4600 3450 50  0001 C CNN
+F 1 "GND_SMALL" H 4600 3450 50  0001 C CNN
+F 2 "" H 4600 3450 50  0001 C CNN
+F 3 "" H 4600 3450 50  0001 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2700 4050 2700
+Connection ~ 4600 2700
+Wire Wire Line
+	4600 2700 4600 3150
+Connection ~ 4050 2700
+Wire Wire Line
+	4050 2700 4050 5000
+Wire Wire Line
+	6700 4250 7050 4250
+$Comp
+L C64-schematics-library:R_US_CUSTOM R60
+U 1 1 65404612
+P 8950 2300
+AR Path="/65404612" Ref="R60"  Part="1" 
+AR Path="/5D940AF4/65404612" Ref="R?"  Part="1" 
+F 0 "R60" V 8900 2050 50  0000 L CNN
+F 1 "100" V 8900 2350 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 8950 2300 50  0001 C CNN
+F 3 "" H 8950 2300 50  0001 C CNN
+	1    8950 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C151
+U 1 1 654F8FF8
+P 9600 2600
+AR Path="/654F8FF8" Ref="C151"  Part="1" 
+AR Path="/5D940AF4/654F8FF8" Ref="C?"  Part="1" 
+F 0 "C151" H 9756 2682 50  0000 C CNN
+F 1 "470pF" H 9800 2600 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 9600 2600 50  0001 C CNN
+F 3 "~" H 9600 2600 50  0001 C CNN
+	1    9600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C150
+U 1 1 654FEE40
+P 10000 2600
+AR Path="/654FEE40" Ref="C150"  Part="1" 
+AR Path="/5D940AF4/654FEE40" Ref="C?"  Part="1" 
+F 0 "C150" H 10156 2682 50  0000 C CNN
+F 1 "470pF" H 10200 2600 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 10000 2600 50  0001 C CNN
+F 3 "~" H 10000 2600 50  0001 C CNN
+	1    10000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C152
+U 1 1 6557402A
+P 9200 2600
+AR Path="/6557402A" Ref="C152"  Part="1" 
+AR Path="/5D940AF4/6557402A" Ref="C?"  Part="1" 
+F 0 "C152" H 9356 2682 50  0000 C CNN
+F 1 "470pF" H 9400 2600 50  0000 C CNN
+F 2 "C64-pcb-library:CAP_P5.08mm" H 9200 2600 50  0001 C CNN
+F 3 "~" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0120
+U 1 1 657177BA
+P 10000 2700
+AR Path="/657177BA" Ref="#U0120"  Part="1" 
+AR Path="/5D940AF4/657177BA" Ref="#U?"  Part="1" 
+F 0 "#U0120" H 10000 2700 50  0001 C CNN
+F 1 "GND_SMALL" H 10000 2700 50  0001 C CNN
+F 2 "" H 10000 2700 50  0001 C CNN
+F 3 "" H 10000 2700 50  0001 C CNN
+	1    10000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0129
+U 1 1 65718250
+P 9600 2700
+AR Path="/65718250" Ref="#U0129"  Part="1" 
+AR Path="/5D940AF4/65718250" Ref="#U?"  Part="1" 
+F 0 "#U0129" H 9600 2700 50  0001 C CNN
+F 1 "GND_SMALL" H 9600 2700 50  0001 C CNN
+F 2 "" H 9600 2700 50  0001 C CNN
+F 3 "" H 9600 2700 50  0001 C CNN
+	1    9600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U0130
+U 1 1 657188A3
+P 9200 2700
+AR Path="/657188A3" Ref="#U0130"  Part="1" 
+AR Path="/5D940AF4/657188A3" Ref="#U?"  Part="1" 
+F 0 "#U0130" H 9200 2700 50  0001 C CNN
+F 1 "GND_SMALL" H 9200 2700 50  0001 C CNN
+F 2 "" H 9200 2700 50  0001 C CNN
+F 3 "" H 9200 2700 50  0001 C CNN
+	1    9200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2500 10000 2200
+Connection ~ 10000 2200
+Wire Wire Line
+	10000 2200 11150 2200
+Wire Wire Line
+	9600 2500 9600 2400
+Connection ~ 9600 2400
+Wire Wire Line
+	9600 2400 11150 2400
+Wire Wire Line
+	9200 2500 9200 2300
+Connection ~ 9200 2300
+Wire Wire Line
+	9200 2300 9050 2300
+$Comp
+L C64-schematics-library:R_US_CUSTOM R48
+U 1 1 65B2E592
+P 12700 8050
+AR Path="/65B2E592" Ref="R48"  Part="1" 
+AR Path="/5D940AF4/65B2E592" Ref="R?"  Part="1" 
+F 0 "R48" H 12500 8100 50  0000 L CNN
+F 1 "1K" H 12500 8025 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 12700 8050 50  0001 C CNN
+F 3 "" H 12700 8050 50  0001 C CNN
+	1    12700 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:R_US_CUSTOM R26
+U 1 1 65B30AD3
+P 13200 8450
+AR Path="/65B30AD3" Ref="R26"  Part="1" 
+AR Path="/5D940AF4/65B30AD3" Ref="R?"  Part="1" 
+F 0 "R26" V 13125 8378 50  0000 L CNN
+F 1 "3.3K" V 13050 8350 50  0000 L CNN
+F 2 "C64-pcb-library:RESISTOR" H 13200 8450 50  0001 C CNN
+F 3 "" H 13200 8450 50  0001 C CNN
+	1    13200 8450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-discrete-library:BJT_2SC1815 Q3
+U 1 1 65B3CDAF
+P 12800 8450
+F 0 "Q3" H 13000 8200 50  0000 L CNN
+F 1 "2SC1815" H 13000 8100 50  0000 L CNN
+F 2 "C64-pcb-library:Q_NPN_ECB" H 13000 8550 50  0001 C CNN
+F 3 "~" H 12800 8450 50  0001 C CNN
+	1    12800 8450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 8150 12700 8200
+Wire Wire Line
+	13100 8450 13000 8450
+Wire Wire Line
+	12700 8650 12700 8750
+$Comp
+L C64-schematics-library:GND_SMALL #U0131
+U 1 1 65D0D10C
+P 12700 8750
+AR Path="/65D0D10C" Ref="#U0131"  Part="1" 
+AR Path="/5D940AF4/65D0D10C" Ref="#U?"  Part="1" 
+F 0 "#U0131" H 12700 8750 50  0001 C CNN
+F 1 "GND_SMALL" H 12700 8750 50  0001 C CNN
+F 2 "" H 12700 8750 50  0001 C CNN
+F 3 "" H 12700 8750 50  0001 C CNN
+	1    12700 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:+5V-power #PWR0162
+U 1 1 65D0E612
+P 12700 7950
+AR Path="/65D0E612" Ref="#PWR0162"  Part="1" 
+AR Path="/5D940AF4/65D0E612" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0162" H 12700 7800 50  0001 C CNN
+F 1 "+5V" H 12650 8100 50  0000 L CNN
+F 2 "" H 12700 7950 50  0001 C CNN
+F 3 "" H 12700 7950 50  0001 C CNN
+	1    12700 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 8450 13400 8450
+Wire Wire Line
+	13400 8450 13400 7250
+Connection ~ 13400 7250
+Wire Wire Line
+	13400 7250 12300 7250
+Wire Wire Line
+	12700 8200 10750 8200
+Wire Wire Line
+	10750 8200 10750 5950
+Wire Wire Line
+	10750 5950 8450 5950
+Wire Wire Line
+	8450 5950 8450 1550
+Wire Wire Line
+	8450 1550 8150 1550
+Wire Wire Line
+	8150 1550 8150 600 
+Connection ~ 12700 8200
+Wire Wire Line
+	12700 8200 12700 8250
+Wire Wire Line
+	1850 600  8150 600 
+Wire Wire Line
+	8250 8750 8550 8750
+Wire Wire Line
+	8250 7950 8550 7950
+Wire Wire Line
+	8750 9750 8750 10450
+Wire Wire Line
+	8850 10000 8850 10400
+Wire Wire Line
+	9900 9550 9900 10050
+Wire Wire Line
+	10300 10450 10300 10650
+Wire Wire Line
+	10800 10350 10800 10650
+Connection ~ 10800 10650
+$Comp
+L C64-schematics-library:POWER_SWITCH SW1
+U 1 1 605D06EB
+P 10300 9650
+F 0 "SW1" H 10450 9700 50  0000 L CNN
+F 1 "POWER_SWITCH" H 10694 9768 50  0001 L CNN
+F 2 "C64-pcb-library:POWER_SWITCH" H 10300 9650 50  0001 C CNN
+F 3 "" H 10300 9650 50  0001 C CNN
+	1    10300 9650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10300 9900 10300 10050
+Wire Wire Line
+	10800 9900 10800 10050
+Wire Wire Line
+	10300 9650 10300 9150
+Connection ~ 10300 9150
+Wire Wire Line
+	10800 9650 10800 9150
+Connection ~ 10800 9150
+Wire Wire Line
+	10500 9900 10500 10000
+$Comp
+L C64-discrete-library:BJT_2SC1815 Q4
+U 1 1 605D05AF
+P 9200 1650
+F 0 "Q4" H 9400 1400 50  0000 L CNN
+F 1 "2SC1815" H 9400 1300 50  0000 L CNN
+F 2 "C64-pcb-library:Q_NPN_ECB" H 9400 1750 50  0001 C CNN
+F 3 "~" H 9200 1650 50  0001 C CNN
+	1    9200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1650 9000 1650
+Text Notes 9050 1400 0    50   ~ 0
+1/2W
+Wire Wire Line
+	10250 1050 10250 1250
+Wire Wire Line
+	9550 1450 9950 1450
+Wire Wire Line
+	11150 1850 10250 1850
+Wire Wire Line
+	10250 1850 10250 1650
+Text Label 9900 10650 1    50   ~ 0
+'9VAC
+$Comp
+L C64-schematics-library:GND_SMALL #U0133
+U 1 1 685B71FE
+P 6700 10900
+AR Path="/685B71FE" Ref="#U0133"  Part="1" 
+AR Path="/5D940AF4/685B71FE" Ref="#U?"  Part="1" 
+F 0 "#U0133" H 6700 10900 50  0001 C CNN
+F 1 "GND_SMALL" H 6700 10900 50  0001 C CNN
+F 2 "" H 6700 10900 50  0001 C CNN
+F 3 "" H 6700 10900 50  0001 C CNN
+	1    6700 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 10500 6700 10500
+Wire Wire Line
+	6700 10500 6600 10500
+Connection ~ 6700 10500
+Wire Wire Line
+	5000 2650 5000 2900
+Wire Wire Line
+	3450 1400 3450 7400
+Wire Wire Line
+	4800 2650 4800 2800
+Wire Wire Line
+	3650 1300 3650 2900
+Wire Wire Line
+	4800 2800 3850 2800
+Connection ~ 4800 2800
+Wire Wire Line
+	4800 2800 4800 3150
+Connection ~ 3850 2800
+Wire Wire Line
+	3850 2800 3850 7200
+Wire Wire Line
+	5000 2900 3650 2900
+Connection ~ 5000 2900
+Wire Wire Line
+	5000 2900 5000 3150
+Connection ~ 3650 2900
+Wire Wire Line
+	3650 2900 3650 7300
+Wire Wire Line
+	10700 2500 11150 2500
+Wire Bus Line
+	7350 7100 7350 7400
+Wire Bus Line
+	6750 7400 6750 8900
+Wire Bus Line
+	6800 5900 6800 6350
+Wire Bus Line
+	6750 1950 6750 5900
+Wire Bus Line
+	6650 3550 6650 8400
+$EndSCHEMATC
