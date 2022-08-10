@@ -3002,17 +3002,17 @@ Wire Wire Line
 Wire Wire Line
 	7850 4450 7850 5300
 $Comp
-L C64-discrete-library:Conn_01x03-Connector_Generic CN10
+L C64-schematics-library:LED_CONN CN10
 U 1 1 605D067A
-P 8750 10650
-F 0 "CN10" V 8913 10876 118 0000 R CNN
-F 1 "LED_CONNECTOR" V 8572 10462 50  0001 R CNN
-F 2 "C64-pcb-library:LED_CON" H 8750 10650 50  0001 C CNN
-F 3 "~" H 8750 10650 50  0001 C CNN
-	1    8750 10650
-	0    1    1    0   
+P 8750 10550
+F 0 "CN10" H 8850 10700 50  0000 R CNN
+F 1 "LED_CONNECTOR" V 8572 10362 50  0001 R CNN
+F 2 "C64-pcb-library:LED_CON" H 8750 10550 50  0001 C CNN
+F 3 "~" H 8750 10550 50  0001 C CNN
+	1    8750 10550
+	-1   0    0    1   
 $EndComp
-Text Notes 9232 11020 2    79   Italic 0
+Text Notes 9250 10850 2    79   Italic 0
 LED CONNECTOR
 $Comp
 L C64-schematics-library:FERRITE_NARROW FB20
@@ -3384,7 +3384,7 @@ Wire Wire Line
 	10300 8500 10300 7950
 Connection ~ 10300 8500
 $Comp
-L C64-discrete-library:D_1N4001 CR6
+L C64-discrete-library:D_Small_ALT CR6
 U 1 1 605D076B
 P 9900 8150
 F 0 "CR6" V 9913 8229 50  0000 L CNN
@@ -3409,10 +3409,8 @@ Wire Wire Line
 	10300 7950 10200 7950
 Wire Wire Line
 	10000 7950 9900 7950
-Wire Wire Line
-	9900 8000 9900 7950
 $Comp
-L C64-discrete-library:D_1N4001 CR5
+L C64-discrete-library:D_Small_ALT CR5
 U 1 1 605D077A
 P 9750 7950
 F 0 "CR5" H 9750 8166 50  0000 C CNN
@@ -3430,10 +3428,6 @@ Wire Wire Line
 	8150 9150 10300 9150
 Wire Wire Line
 	8250 9250 9900 9250
-Wire Wire Line
-	9900 8350 9900 8300
-Wire Wire Line
-	9600 7950 9450 7950
 Text Notes 10169 7885 2    50   ~ 0
 50V
 $Comp
@@ -5318,7 +5312,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 2500 9950 2500
 Wire Wire Line
-	11000 10650 11200 10650
+	11000 10650 11100 10650
 Wire Wire Line
 	11550 3350 11550 3650
 Wire Wire Line
@@ -5360,6 +5354,31 @@ F 3 "~" H 10750 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10900 4000 10750 4000
+Connection ~ 10750 4000
+Connection ~ 6700 10500
+Wire Wire Line
+	6700 10500 6750 10500
+Connection ~ 11550 3650
+Wire Wire Line
+	11550 3650 11550 3850
+Connection ~ 11800 3850
+Wire Wire Line
+	11800 3850 11900 3850
+Connection ~ 11350 3150
+Wire Wire Line
+	11350 3150 11350 4500
+Wire Wire Line
+	9900 7950 9850 7950
+Connection ~ 9900 7950
+Wire Wire Line
+	9900 7950 9900 8050
+Wire Wire Line
+	9900 8250 9900 8350
+Wire Wire Line
+	9450 7950 9650 7950
+Connection ~ 11100 10650
+Wire Wire Line
+	11100 10650 11200 10650
 Wire Bus Line
 	7350 7100 7350 7400
 Wire Bus Line
@@ -5370,19 +5389,4 @@ Wire Bus Line
 	6750 1950 6750 5900
 Wire Bus Line
 	6650 3550 6650 8400
-Connection ~ 10750 4000
-Connection ~ 6700 10500
-Wire Wire Line
-	6700 10500 6750 10500
-Connection ~ 11550 3350
-Connection ~ 11550 3650
-Wire Wire Line
-	11550 3650 11550 3850
-Connection ~ 11800 3850
-Wire Wire Line
-	11800 3850 11900 3850
-Connection ~ 11350 3150
-Wire Wire Line
-	11350 3150 11350 4500
-Connection ~ 11350 3050
 $EndSCHEMATC

@@ -4306,6 +4306,22 @@ Text Label 7200 10250 1    50   ~ 0
 ~ROMH~
 Text Label 7300 10250 1    50   ~ 0
 ~ROML~
+Text Label 9450 10250 1    50   ~ 0
+~I\O1~
+Text Label 9350 10250 1    50   ~ 0
+~I\O2~
+Text Notes 9350 10000 1    50   ~ 0
+(DF00-DFFF)
+Text Notes 9450 10000 1    50   ~ 0
+(DE00-DEFF)
+Text Notes 7300 9950 1    50   ~ 0
+(8000-9FFF)
+Text Notes 7200 9950 1    50   ~ 0
+(A000-BFFF        OR E000-FFFF)
+Wire Wire Line
+	14350 8200 14500 8200
+Wire Wire Line
+	14500 8200 14500 8650
 Wire Bus Line
 	8400 9200 8400 9400
 Wire Bus Line
@@ -4352,16 +4368,18 @@ Wire Bus Line
 	1700 2100 1700 5400
 Wire Bus Line
 	2800 4600 9300 4600
-Text Label 9450 10250 1    50   ~ 0
-~I\O1~
-Text Label 9350 10250 1    50   ~ 0
-~I\O2~
-Text Notes 9350 10000 1    50   ~ 0
-(DF00-DFFF)
-Text Notes 9450 10000 1    50   ~ 0
-(DE00-DEFF)
-Text Notes 7300 9950 1    50   ~ 0
-(8000-9FFF)
-Text Notes 7200 9950 1    50   ~ 0
-(A000-BFFF        OR E000-FFFF)
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 65826DFD
+P 14500 8650
+AR Path="/65826DFD" Ref="#U?"  Part="1" 
+AR Path="/5D940AF4/65826DFD" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/65826DFD" Ref="#U0139"  Part="1" 
+F 0 "#U0139" H 14500 8650 50  0001 C CNN
+F 1 "GND_SMALL" H 14500 8650 50  0001 C CNN
+F 2 "" H 14500 8650 50  0001 C CNN
+F 3 "" H 14500 8650 50  0001 C CNN
+	1    14500 8650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

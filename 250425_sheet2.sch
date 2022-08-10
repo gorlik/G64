@@ -5000,6 +5000,22 @@ Wire Wire Line
 	14350 8200 14450 8200
 Wire Wire Line
 	14450 8200 14450 8500
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 63999CA1
+P 14450 8500
+AR Path="/63999CA1" Ref="#U?"  Part="1" 
+AR Path="/5D940AF4/63999CA1" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/63999CA1" Ref="#U?"  Part="1" 
+F 0 "#U?" H 14450 8500 50  0001 C CNN
+F 1 "GND_SMALL" H 14450 8500 50  0001 C CNN
+F 2 "" H 14450 8500 50  0001 C CNN
+F 3 "" H 14450 8500 50  0001 C CNN
+	1    14450 8500
+	1    0    0    -1  
+$EndComp
+Text Notes 14200 8800 0    50   ~ 0
+FIXME: MISSING variable CAP
 Wire Bus Line
 	8400 9200 8400 9400
 Wire Bus Line
@@ -5046,20 +5062,4 @@ Wire Bus Line
 	1700 2100 1700 5400
 Wire Bus Line
 	2800 4600 9300 4600
-$Comp
-L C64-schematics-library:GND_SMALL #U?
-U 1 1 63999CA1
-P 14450 8500
-AR Path="/63999CA1" Ref="#U?"  Part="1" 
-AR Path="/5D940AF4/63999CA1" Ref="#U?"  Part="1" 
-AR Path="/604E5F00/63999CA1" Ref="#U?"  Part="1" 
-F 0 "#U?" H 14450 8500 50  0001 C CNN
-F 1 "GND_SMALL" H 14450 8500 50  0001 C CNN
-F 2 "" H 14450 8500 50  0001 C CNN
-F 3 "" H 14450 8500 50  0001 C CNN
-	1    14450 8500
-	1    0    0    -1  
-$EndComp
-Text Notes 14200 8800 0    50   ~ 0
-FIXME: MISSING variable CAP
 $EndSCHEMATC
