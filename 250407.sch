@@ -3264,7 +3264,7 @@ F 3 "~" H 9550 9750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C64-discrete-library:Fuse F1
+L C64-schematics-library:Fuse_ALT F1
 U 1 1 605D0718
 P 9900 9400
 F 0 "F1" H 9750 9469 50  0000 L CNN
@@ -3274,8 +3274,6 @@ F 3 "~" H 9900 9400 50  0001 C CNN
 	1    9900 9400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 9550 9900 9600
 Connection ~ 9900 9600
 Wire Wire Line
 	8250 9250 8250 10000
@@ -5379,6 +5377,11 @@ Wire Wire Line
 Connection ~ 11100 10650
 Wire Wire Line
 	11100 10650 11200 10650
+Wire Wire Line
+	9900 9250 9900 9300
+Connection ~ 9900 9250
+Wire Wire Line
+	9900 9500 9900 9600
 Wire Bus Line
 	7350 7100 7350 7400
 Wire Bus Line
