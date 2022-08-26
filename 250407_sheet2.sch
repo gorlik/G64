@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP1
+L C64-schematics-library:R_ARRAY_4R RP1
 U 1 1 60633A40
 P 3600 1950
 F 0 "RP1" H 3653 1986 39  0001 L CNN
@@ -25,7 +25,7 @@ F 3 "" H 3600 1950 39  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP1
+L C64-schematics-library:R_ARRAY_4R RP1
 U 2 1 60633A46
 P 3600 2150
 F 0 "RP1" H 3652 2186 39  0001 L CNN
@@ -36,7 +36,7 @@ F 3 "" H 3600 2150 39  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP1
+L C64-schematics-library:R_ARRAY_4R RP1
 U 3 1 60633A4C
 P 3600 2050
 F 0 "RP1" H 3652 2086 39  0001 L CNN
@@ -47,7 +47,7 @@ F 3 "" H 3600 2050 39  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP1
+L C64-schematics-library:R_ARRAY_4R RP1
 U 4 1 60633A52
 P 3600 1850
 F 0 "RP1" H 3652 1886 39  0001 L CNN
@@ -88,7 +88,7 @@ RP2
 Text Notes 3553 2707 0    39   ~ 0
 33
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP2
+L C64-schematics-library:R_ARRAY_4R RP2
 U 4 1 60633A6E
 P 3600 2450
 F 0 "RP2" H 3652 2486 39  0001 L CNN
@@ -99,7 +99,7 @@ F 3 "" H 3600 2450 39  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP2
+L C64-schematics-library:R_ARRAY_4R RP2
 U 3 1 60633A74
 P 3600 2350
 F 0 "RP2" H 3652 2386 39  0001 L CNN
@@ -110,7 +110,7 @@ F 3 "" H 3600 2350 39  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP2
+L C64-schematics-library:R_ARRAY_4R RP2
 U 1 1 60633A7A
 P 3600 2250
 F 0 "RP2" H 3653 2286 39  0001 L CNN
@@ -143,7 +143,7 @@ Text Label 2700 2900 2    39   ~ 0
 Text Label 2500 4450 1    47   ~ 0
 ~CAS~
 $Comp
-L C64-schematics-library:R_ARRAY_US_4RES RP2
+L C64-schematics-library:R_ARRAY_4R RP2
 U 2 1 60633A98
 P 3600 2550
 F 0 "RP2" H 3652 2586 39  0001 L CNN
@@ -1102,7 +1102,7 @@ Text Label 2600 10300 1    50   ~ 0
 Text Notes 2400 10000 0    50   ~ 0
 RP4\n3.3K
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP?
+L C64-schematics-library:R_ARRAY_9R_BUS RP?
 U 9 1 60633CC4
 P 2450 10050
 AR Path="/5D940AF4/60633CC4" Ref="RP?"  Part="7" 
@@ -1202,7 +1202,7 @@ Wire Wire Line
 Text Notes 1500 10150 0    50   ~ 0
 RP4\n3.3K
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP?
+L C64-schematics-library:R_ARRAY_9R_BUS RP?
 U 1 1 60633CF8
 P 1050 9850
 AR Path="/5D940AF4/60633CF8" Ref="RP?"  Part="7" 
@@ -1456,7 +1456,7 @@ Wire Wire Line
 Text Notes 6000 9650 0    50   ~ 0
 RP4\n3.3K
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP?
+L C64-schematics-library:R_ARRAY_9R_BUS RP?
 U 6 1 60633D86
 P 6050 9700
 AR Path="/5D940AF4/60633D86" Ref="RP?"  Part="7" 
@@ -1470,7 +1470,7 @@ F 3 "" H 6050 9700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP?
+L C64-schematics-library:R_ARRAY_9R_BUS RP?
 U 8 1 60633D8C
 P 6050 9800
 AR Path="/5D940AF4/60633D8C" Ref="RP?"  Part="7" 
@@ -1572,7 +1572,7 @@ Wire Wire Line
 Text Notes 1000 9800 0    50   ~ 0
 RP4\n3.3K
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP?
+L C64-schematics-library:R_ARRAY_9R_BUS RP?
 U 2 1 60633DC9
 P 1650 9950
 AR Path="/5D940AF4/60633DC9" Ref="RP?"  Part="7" 

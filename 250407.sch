@@ -2384,7 +2384,7 @@ Entry Wire Line
 Entry Wire Line
 	7350 7400 7450 7300
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP4
+L C64-schematics-library:R_ARRAY_9R_BUS RP4
 U 3 1 605D053A
 P 7750 7000
 F 0 "RP4" V 7628 7000 50  0001 C CNN
@@ -2395,7 +2395,7 @@ F 3 "" H 7750 7000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP4
+L C64-schematics-library:R_ARRAY_9R_BUS RP4
 U 4 1 605D0540
 P 7750 7100
 F 0 "RP4" V 7628 7100 50  0001 C CNN
@@ -2406,7 +2406,7 @@ F 3 "" H 7750 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP4
+L C64-schematics-library:R_ARRAY_9R_BUS RP4
 U 5 1 605D0546
 P 7750 7200
 F 0 "RP4" V 7628 7200 50  0001 C CNN
@@ -2419,7 +2419,7 @@ $EndComp
 Wire Wire Line
 	7850 7200 7950 7200
 $Comp
-L C64-schematics-library:R_ARRAY_9WAY_US RP4
+L C64-schematics-library:R_ARRAY_9R_BUS RP4
 U 7 1 605D054D
 P 7750 7300
 F 0 "RP4" V 7628 7300 50  0001 C CNN
@@ -2430,7 +2430,7 @@ F 3 "" H 7750 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_7WAY_US RP3
+L C64-schematics-library:R_ARRAY_7R_BUS RP3
 U 3 1 605D0553
 P 3000 900
 F 0 "RP3" V 3099 900 50  0001 C CNN
@@ -2441,7 +2441,7 @@ F 3 "" H 3000 910 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_7WAY_US RP3
+L C64-schematics-library:R_ARRAY_7R_BUS RP3
 U 2 1 605D0559
 P 4950 4400
 F 0 "RP3" H 5003 4400 50  0001 L CNN
@@ -2452,7 +2452,7 @@ F 3 "" H 4950 4410 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_7WAY_US RP3
+L C64-schematics-library:R_ARRAY_7R_BUS RP3
 U 1 1 605D055F
 P 5150 10200
 F 0 "RP3" H 5075 10200 50  0001 R CNN
@@ -2463,7 +2463,7 @@ F 3 "" H 5150 10210 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_7WAY_US RP3
+L C64-schematics-library:R_ARRAY_7R_BUS RP3
 U 4 1 605D0565
 P 1800 7700
 F 0 "RP3" H 1853 7700 50  0001 L CNN
@@ -2474,7 +2474,7 @@ F 3 "" H 1800 7710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_7WAY_US RP3
+L C64-schematics-library:R_ARRAY_7R_BUS RP3
 U 5 1 605D056B
 P 1900 7700
 F 0 "RP3" H 1952 7700 50  0001 L CNN
@@ -2485,7 +2485,7 @@ F 3 "" H 1900 7710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_7WAY_US RP3
+L C64-schematics-library:R_ARRAY_7R_BUS RP3
 U 6 1 605D0571
 P 2000 7700
 F 0 "RP3" H 2052 7700 50  0001 L CNN
@@ -2496,7 +2496,7 @@ F 3 "" H 2000 7710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C64-schematics-library:R_ARRAY_7WAY_US RP3
+L C64-schematics-library:R_ARRAY_7R_BUS RP3
 U 7 1 605D0577
 P 2100 7700
 F 0 "RP3" H 2153 7700 50  0001 L CNN
@@ -3336,7 +3336,7 @@ Wire Wire Line
 Connection ~ 10800 9150
 Connection ~ 10800 9700
 $Comp
-L C64-schematics-library:7805 VR2
+L C64-schematics-library:78xx-alt VR2
 U 1 1 605D074B
 P 8850 8750
 F 0 "VR2" H 8844 8927 79  0000 C CNN
@@ -3347,7 +3347,7 @@ F 3 "" H 8850 8900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C64-schematics-library:7812 VR1
+L C64-schematics-library:78xx-alt VR1
 U 1 1 605D0751
 P 8850 7950
 F 0 "VR1" H 8853 8115 79  0000 C CNN
@@ -5382,6 +5382,8 @@ Wire Wire Line
 Connection ~ 9900 9250
 Wire Wire Line
 	9900 9500 9900 9600
+NoConn ~ 10700 10650
+NoConn ~ 10200 10650
 Wire Bus Line
 	7350 7100 7350 7400
 Wire Bus Line
