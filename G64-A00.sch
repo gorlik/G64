@@ -91,19 +91,6 @@ Wire Wire Line
 Wire Wire Line
 	1550 1500 1550 1600
 $Comp
-L C64-schematics-library:FERRITE_BEAD FB18
-U 1 1 605D0086
-P 1800 2700
-AR Path="/605D0086" Ref="FB18"  Part="1" 
-AR Path="/5D940AF4/605D0086" Ref="FB?"  Part="1" 
-F 0 "FB18" H 1800 2778 50  0000 C CNN
-F 1 "FERRITE_BEAD" H 1800 2650 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 1850 2725 50  0001 C CNN
-F 3 "" H 1800 2700 50  0001 C CNN
-	1    1800 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L C64-discrete-library:+5V-power #PWR0101
 U 1 1 605D008C
 P 1600 2700
@@ -863,8 +850,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 2500 2150 5800
 Wire Wire Line
-	2050 2700 2000 2700
-Wire Wire Line
 	1950 2500 1950 2300
 Wire Wire Line
 	2050 2300 2050 2500
@@ -1063,66 +1048,21 @@ Wire Wire Line
 Wire Wire Line
 	1900 8000 2600 8000
 Wire Wire Line
-	3450 1400 3450 6950
-Wire Wire Line
 	1500 1400 3450 1400
 Wire Wire Line
-	3650 1300 3650 6950
-Wire Wire Line
 	1500 1300 3650 1300
-Wire Wire Line
-	3850 1200 3850 6950
 Wire Wire Line
 	1500 1200 3850 1200
 Wire Wire Line
 	1500 8100 3450 8100
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB7
-U 1 1 605D0288
-P 3450 7050
-F 0 "FB7" H 3377 6988 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 3400 6950 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 3450 7050 50  0001 C CNN
-F 3 "" H 3450 7050 50  0001 C CNN
-	1    3450 7050
-	0    1    1    0   
-$EndComp
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB9
-U 1 1 605D028E
-P 3650 7050
-F 0 "FB9" H 3573 6989 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 3600 6950 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 3650 7050 50  0001 C CNN
-F 3 "" H 3650 7050 50  0001 C CNN
-	1    3650 7050
-	0    1    1    0   
-$EndComp
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB8
-U 1 1 605D0294
-P 3850 7050
-F 0 "FB8" H 3773 6991 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 3800 6950 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 3850 7050 50  0001 C CNN
-F 3 "" H 3850 7050 50  0001 C CNN
-	1    3850 7050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5450 7800 4750 7800
 Wire Wire Line
 	4750 7800 4750 7300
-Wire Wire Line
-	3850 7150 3850 7200
 Connection ~ 3850 7200
-Wire Wire Line
-	3650 7150 3650 7300
 Connection ~ 3650 7300
 Wire Wire Line
 	3650 7300 3250 7300
-Wire Wire Line
-	3450 7150 3450 7400
 $Comp
 L C64-discrete-library:+5V-power #PWR0110
 U 1 1 605D02A3
@@ -2266,17 +2206,6 @@ Wire Wire Line
 Connection ~ 7050 6500
 Wire Wire Line
 	7050 4250 7550 4250
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB5
-U 1 1 605D0500
-P 6900 4250
-F 0 "FB5" H 6829 4168 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 6850 4150 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 6900 4250 50  0001 C CNN
-F 3 "" H 6900 4250 50  0001 C CNN
-	1    6900 4250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6450 4250 6550 4250
 Wire Wire Line
@@ -2285,10 +2214,6 @@ Wire Wire Line
 	6550 4300 6700 4300
 Wire Wire Line
 	6700 4300 6650 4250
-Wire Wire Line
-	6650 4250 6800 4250
-Wire Wire Line
-	7050 4250 7000 4250
 Connection ~ 7050 4250
 Text GLabel 7550 4250 2    50   Output ~ 0
 PHI2
@@ -2706,46 +2631,16 @@ Wire Wire Line
 	9250 1250 9250 1450
 Wire Wire Line
 	8950 1250 9250 1250
-Wire Wire Line
-	9400 1850 9250 1850
 Text Notes 10700 2800 1    79   Italic 0
 (6-PIN MALE EDGE)
 Text Notes 10550 2550 1    79   Italic 0
 CASSETTE
 Wire Wire Line
 	7450 2200 10150 2200
-Wire Wire Line
-	9200 2300 7350 2300
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB2
-U 1 1 605D05E9
-P 9500 1850
-F 0 "FB2" H 9426 1791 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 9450 1750 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 9500 1850 50  0001 C CNN
-F 3 "" H 9500 1850 50  0001 C CNN
-	1    9500 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10150 1850 9600 1850
 Text Label 9650 2200 0    50   ~ 0
 CASS_SENSE
 Text Label 9650 2300 0    50   ~ 0
 CASS_WRT'
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB1
-U 1 1 605D05F2
-P 9300 2300
-F 0 "FB1" H 9075 2262 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 9250 2200 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 9300 2300 50  0001 C CNN
-F 3 "" H 9300 2300 50  0001 C CNN
-	1    9300 2300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10150 2300 9400 2300
 $Comp
 L C64-discrete-library:C_Small C1
 U 1 1 605D05F9
@@ -2772,8 +2667,6 @@ F 3 "" H 9950 2700 50  0001 C CNN
 	1    9950 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9550 2500 9450 2500
 $Comp
 L C64-discrete-library:+5V-power #PWR0126
 U 1 1 605D0606
@@ -2802,17 +2695,6 @@ F 3 "" H 10150 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10150 2600 10150 2700
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB3
-U 1 1 605D0614
-P 9650 2500
-F 0 "FB3" H 9575 2571 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 9600 2400 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 9650 2500 50  0001 C CNN
-F 3 "" H 9650 2500 50  0001 C CNN
-	1    9650 2500
-	-1   0    0    1   
-$EndComp
 Text Label 9650 2400 0    50   ~ 0
 CASS_RD
 Wire Wire Line
@@ -2870,8 +2752,6 @@ F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=p
 	1    9150 1650
 	1    0    0    -1  
 $EndComp
-Text Label 9850 2500 0    50   ~ 0
-5V_FB3
 Wire Wire Line
 	6450 1350 7050 1350
 Wire Wire Line
@@ -3008,28 +2888,6 @@ F 3 "~" H 8750 10550 50  0001 C CNN
 $EndComp
 Text Notes 9250 10850 2    79   Italic 0
 LED CONNECTOR
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB20
-U 1 1 605D0681
-P 8750 10050
-F 0 "FB20" H 8463 10016 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 8700 9950 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 8750 10050 50  0001 C CNN
-F 3 "" H 8750 10050 50  0001 C CNN
-	1    8750 10050
-	0    1    1    0   
-$EndComp
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB21
-U 1 1 605D0687
-P 8850 10050
-F 0 "FB21" H 8561 10015 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 8800 9950 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 8850 10050 50  0001 C CNN
-F 3 "" H 8850 10050 50  0001 C CNN
-	1    8850 10050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8850 10450 8850 10400
 Wire Wire Line
@@ -3037,8 +2895,6 @@ Wire Wire Line
 Wire Wire Line
 	8650 10400 8650 10450
 Connection ~ 8850 10400
-Wire Wire Line
-	8850 10400 8850 10150
 $Comp
 L C64-discrete-library:+5V-power #PWR0129
 U 1 1 605D0699
@@ -3065,8 +2921,6 @@ F 3 "" H 8850 9650 50  0001 C CNN
 	1    8850 9650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8850 9750 8850 9950
 $Comp
 L C64-discrete-library:L_Core_Iron L5
 U 1 1 605D06A6
@@ -3615,10 +3469,6 @@ Wire Wire Line
 Connection ~ 11200 10400
 Wire Wire Line
 	11200 10400 11200 10200
-Wire Wire Line
-	8750 10150 8750 10450
-Text Label 8750 10350 1    31   ~ 0
-GND_LED
 Text Label 8850 10350 1    31   ~ 0
 LED+
 Text Label 1550 4000 0    31   ~ 0
@@ -4360,17 +4210,6 @@ F 2 "C64-pcb-library:RESISTOR" H 8950 2950 50  0001 C CNN
 F 3 "~" H 8950 2950 50  0001 C CNN
 	1    8950 2950
 	0    -1   -1   0   
-$EndComp
-$Comp
-L C64-schematics-library:FERRITE_NARROW FB19
-U 1 1 605D0AA1
-P 9200 2950
-F 0 "FB19" H 9127 3016 50  0000 L CNN
-F 1 "FERRITE_BEAD" H 9150 2850 50  0001 C CNN
-F 2 "C64-pcb-library:FERRITE_BEAD_TH_P12.7mm" H 9200 2950 50  0001 C CNN
-F 3 "" H 9200 2950 50  0001 C CNN
-	1    9200 2950
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9750 4750 10300 4750
@@ -5298,10 +5137,6 @@ Wire Wire Line
 Wire Wire Line
 	8600 9500 8600 9650
 Wire Wire Line
-	8750 9500 8750 9950
-Wire Wire Line
-	9750 2500 9950 2500
-Wire Wire Line
 	11000 10650 11100 10650
 Wire Wire Line
 	11550 3350 11550 3650
@@ -5309,8 +5144,6 @@ Wire Wire Line
 	11550 3850 11800 3850
 Wire Wire Line
 	11900 2950 12000 2950
-Wire Wire Line
-	9300 2950 9400 2950
 Wire Wire Line
 	8450 2950 8750 2950
 Wire Wire Line
@@ -5468,6 +5301,47 @@ F1 "G64-A00_sheet2.sch" 50
 $EndSheet
 Text Label 9900 10500 1    50   ~ 0
 9V_IN'
+Text Label 10800 10300 1    50   ~ 0
+5V_IN
+Text Label 9600 9600 0    50   ~ 0
+9V_F
+Wire Wire Line
+	1600 2700 2050 2700
+Wire Wire Line
+	3450 1400 3450 7400
+Wire Wire Line
+	3650 1300 3650 7300
+Wire Wire Line
+	3850 1200 3850 7200
+Wire Wire Line
+	6650 4250 7050 4250
+Wire Wire Line
+	8850 9750 8850 10400
+Wire Wire Line
+	8750 9500 8750 10450
+Wire Wire Line
+	9100 2950 9400 2950
+Wire Wire Line
+	9250 1850 10150 1850
+Wire Wire Line
+	9450 2500 9950 2500
+$Comp
+L C64-schematics-library:R_US_CUSTOM R60
+U 1 1 67556C2F
+P 8750 2300
+AR Path="/67556C2F" Ref="R60"  Part="1" 
+AR Path="/5D940AF4/67556C2F" Ref="R?"  Part="1" 
+F 0 "R60" V 8700 2050 50  0000 L CNN
+F 1 "100" V 8700 2400 50  0000 L CNN
+F 2 "pth_r:r_0250p12_7" H 8750 2300 50  0001 C CNN
+F 3 "" H 8750 2300 50  0001 C CNN
+	1    8750 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 2300 10150 2300
+Wire Wire Line
+	8650 2300 7350 2300
 Wire Bus Line
 	7350 7100 7350 7400
 Wire Bus Line
@@ -5478,8 +5352,4 @@ Wire Bus Line
 	6750 1950 6750 5900
 Wire Bus Line
 	6650 3550 6650 8400
-Text Label 10800 10300 1    50   ~ 0
-5V_IN
-Text Label 9600 9600 0    50   ~ 0
-9V_F
 $EndSCHEMATC
