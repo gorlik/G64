@@ -3277,7 +3277,7 @@ Entry Wire Line
 Wire Wire Line
 	11350 6000 11250 6000
 Wire Wire Line
-	11250 6000 11250 9050
+	11250 6000 11250 8050
 Text Label 11250 10200 1    50   ~ 0
 DOT_CLOCK
 Text Label 11250 6550 1    50   ~ 0
@@ -3287,7 +3287,7 @@ Text Label 11350 6550 1    50   ~ 0
 Wire Wire Line
 	11350 5900 11150 5900
 Wire Wire Line
-	11150 5900 11150 8900
+	11150 5900 11150 7950
 Wire Wire Line
 	11150 8900 12250 8900
 Wire Wire Line
@@ -3994,8 +3994,6 @@ $EndComp
 Connection ~ 14250 6700
 Wire Wire Line
 	14250 6700 14550 6700
-Text GLabel 14000 1650 2    50   Input ~ 0
-CAN+5V
 Text Label 3650 8900 0    28   ~ 0
 VA5
 Text Label 3750 9000 0    28   ~ 0
@@ -5137,6 +5135,279 @@ Wire Wire Line
 	12350 3300 13500 3300
 Wire Wire Line
 	12350 3200 13500 3200
+$Comp
+L C64-schematics-library:8701 U31
+U 1 1 677E3565
+P 13750 8350
+F 0 "U31" H 13650 8550 79  0000 L CNN
+F 1 "8701" H 13600 8850 50  0001 C CNN
+F 2 "pth_dil:DIP-16_300" H 13750 8350 50  0001 C CNN
+F 3 "" H 13750 8350 50  0001 C CNN
+	1    13750 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Variable_Small CT1
+U 1 1 67800AC9
+P 14250 8550
+F 0 "CT1" H 14343 8596 50  0000 L CNN
+F 1 "22pF" H 14343 8505 50  0000 L CNN
+F 2 "C64-pcb-library:CAP_trim_5.08mm" H 14250 8550 50  0001 C CNN
+F 3 "" H 14250 8550 50  0001 C CNN
+	1    14250 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:C_Small C?
+U 1 1 67801E57
+P 14500 7700
+AR Path="/67801E57" Ref="C?"  Part="1" 
+AR Path="/5D940AF4/67801E57" Ref="C?"  Part="1" 
+AR Path="/5D659BBE/67801E57" Ref="C?"  Part="1" 
+AR Path="/604E5F00/67801E57" Ref="C58"  Part="1" 
+F 0 "C58" H 14350 7750 50  0000 C CNN
+F 1 ".22uF" H 14350 7650 50  0000 C CNN
+F 2 "pth_c:C_film_7x2.5" H 14500 7700 50  0001 C CNN
+F 3 "~" H 14500 7700 50  0001 C CNN
+	1    14500 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:L L1
+U 1 1 67807D2F
+P 14800 7550
+F 0 "L1" V 14990 7550 50  0000 C CNN
+F 1 "L" V 14899 7550 50  0000 C CNN
+F 2 "C64-pcb-library:RESISTOR" H 14800 7550 50  0001 C CNN
+F 3 "" H 14800 7550 50  0001 C CNN
+	1    14800 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 6782F6AD
+P 14500 7800
+AR Path="/6782F6AD" Ref="#U?"  Part="1" 
+AR Path="/5D659BBE/6782F6AD" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/6782F6AD" Ref="#U05"  Part="1" 
+F 0 "#U05" H 14500 7800 50  0001 C CNN
+F 1 "GND_SMALL" H 14500 7800 50  0001 C CNN
+F 2 "" H 14500 7800 50  0001 C CNN
+F 3 "" H 14500 7800 50  0001 C CNN
+	1    14500 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 7550 14500 7550
+Wire Wire Line
+	14500 7550 14500 7600
+Wire Wire Line
+	14500 7550 13800 7550
+Wire Wire Line
+	13800 7550 13800 7750
+Connection ~ 14500 7550
+Wire Wire Line
+	13800 7550 13700 7550
+Wire Wire Line
+	13700 7550 13700 7750
+Connection ~ 13800 7550
+Wire Wire Line
+	14950 7550 15150 7550
+Wire Wire Line
+	14050 8350 14250 8350
+Wire Wire Line
+	14250 8350 14250 8450
+Wire Wire Line
+	14050 7950 14250 7950
+Wire Wire Line
+	13700 8700 13750 8700
+Wire Wire Line
+	13800 8700 13800 8650
+Wire Wire Line
+	13700 8650 13700 8700
+Connection ~ 13750 8700
+Wire Wire Line
+	13750 8700 13800 8700
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 67CB8678
+P 13750 8800
+AR Path="/67CB8678" Ref="#U?"  Part="1" 
+AR Path="/5D659BBE/67CB8678" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/67CB8678" Ref="#U03"  Part="1" 
+F 0 "#U03" H 13750 8800 50  0001 C CNN
+F 1 "GND_SMALL" H 13750 8800 50  0001 C CNN
+F 2 "" H 13750 8800 50  0001 C CNN
+F 3 "" H 13750 8800 50  0001 C CNN
+	1    13750 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 8700 13750 8800
+Wire Wire Line
+	14250 8650 14250 8800
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 67DA2A86
+P 14250 8800
+AR Path="/67DA2A86" Ref="#U?"  Part="1" 
+AR Path="/5D659BBE/67DA2A86" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/67DA2A86" Ref="#U04"  Part="1" 
+F 0 "#U04" H 14250 8800 50  0001 C CNN
+F 1 "GND_SMALL" H 14250 8800 50  0001 C CNN
+F 2 "" H 14250 8800 50  0001 C CNN
+F 3 "" H 14250 8800 50  0001 C CNN
+	1    14250 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 8450 13350 8450
+Wire Wire Line
+	13350 8450 13350 8650
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 67E1880F
+P 13350 8650
+AR Path="/67E1880F" Ref="#U?"  Part="1" 
+AR Path="/5D659BBE/67E1880F" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/67E1880F" Ref="#U02"  Part="1" 
+F 0 "#U02" H 13350 8650 50  0001 C CNN
+F 1 "GND_SMALL" H 13350 8650 50  0001 C CNN
+F 2 "" H 13350 8650 50  0001 C CNN
+F 3 "" H 13350 8650 50  0001 C CNN
+	1    13350 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 8350 13100 8350
+Wire Wire Line
+	13100 8350 13100 8400
+$Comp
+L C64-schematics-library:Crystal Y1
+U 1 1 67E8F277
+P 14250 8150
+F 0 "Y1" H 14100 8200 50  0000 R CNN
+F 1 "Crystal" H 14250 8000 50  0001 C CNN
+F 2 "xtal:XTAL_PTH_HC-49US" H 14250 8150 50  0001 C CNN
+F 3 "" H 14250 8150 50  0001 C CNN
+	1    14250 8150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:JUMPER_WIRE E1
+U 1 1 67E909E3
+P 13100 8550
+F 0 "E1" H 13100 8550 39  0001 C CNN
+F 1 "JUMPER_WIRE" H 13100 8500 39  0001 C CNN
+F 2 "pin_strip:pin_strip_2" H 13100 8550 39  0001 C CNN
+F 3 "" H 13100 8550 39  0001 C CNN
+	1    13100 8550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13100 8550 13100 8650
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 67E9261E
+P 13100 8650
+AR Path="/67E9261E" Ref="#U?"  Part="1" 
+AR Path="/5D659BBE/67E9261E" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/67E9261E" Ref="#U01"  Part="1" 
+F 0 "#U01" H 13100 8650 50  0001 C CNN
+F 1 "GND_SMALL" H 13100 8650 50  0001 C CNN
+F 2 "" H 13100 8650 50  0001 C CNN
+F 3 "" H 13100 8650 50  0001 C CNN
+	1    13100 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 8050 14250 7950
+Wire Wire Line
+	14250 8250 14250 8350
+Connection ~ 14250 8350
+Wire Wire Line
+	13450 7950 11150 7950
+Connection ~ 11150 7950
+Wire Wire Line
+	11150 7950 11150 8900
+Wire Wire Line
+	13450 8050 11250 8050
+Connection ~ 11250 8050
+Wire Wire Line
+	11250 8050 11250 9050
+$Comp
+L C64-discrete-library:C_Small C?
+U 1 1 6852A275
+P 15150 7700
+AR Path="/6852A275" Ref="C?"  Part="1" 
+AR Path="/5D940AF4/6852A275" Ref="C?"  Part="1" 
+AR Path="/5D659BBE/6852A275" Ref="C?"  Part="1" 
+AR Path="/604E5F00/6852A275" Ref="C66"  Part="1" 
+F 0 "C66" H 15000 7750 50  0000 C CNN
+F 1 ".1uF" H 15000 7650 50  0000 C CNN
+F 2 "pth_c:C_film_7x2.5" H 15150 7700 50  0001 C CNN
+F 3 "~" H 15150 7700 50  0001 C CNN
+	1    15150 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-discrete-library:CP_Small C?
+U 1 1 6852CE8C
+P 15350 7700
+AR Path="/5D940AF4/6852CE8C" Ref="C?"  Part="1" 
+AR Path="/5D659BBE/6852CE8C" Ref="C?"  Part="1" 
+AR Path="/604E5F00/6852CE8C" Ref="C65"  Part="1" 
+F 0 "C65" H 15432 7748 50  0000 L CNN
+F 1 "10uF" H 15437 7687 50  0000 L CNN
+F 2 "pth_cp:CP_5p2x11" H 15350 7700 50  0001 C CNN
+F 3 "~" H 15350 7700 50  0001 C CNN
+	1    15350 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15150 7600 15150 7550
+Connection ~ 15150 7550
+Wire Wire Line
+	15150 7550 15350 7550
+Wire Wire Line
+	15350 7600 15350 7550
+Connection ~ 15350 7550
+Wire Wire Line
+	15350 7550 15650 7550
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 687A6A13
+P 15150 7800
+AR Path="/687A6A13" Ref="#U?"  Part="1" 
+AR Path="/5D659BBE/687A6A13" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/687A6A13" Ref="#U06"  Part="1" 
+F 0 "#U06" H 15150 7800 50  0001 C CNN
+F 1 "GND_SMALL" H 15150 7800 50  0001 C CNN
+F 2 "" H 15150 7800 50  0001 C CNN
+F 3 "" H 15150 7800 50  0001 C CNN
+	1    15150 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C64-schematics-library:GND_SMALL #U?
+U 1 1 687A766D
+P 15350 7800
+AR Path="/687A766D" Ref="#U?"  Part="1" 
+AR Path="/5D659BBE/687A766D" Ref="#U?"  Part="1" 
+AR Path="/604E5F00/687A766D" Ref="#U07"  Part="1" 
+F 0 "#U07" H 15350 7800 50  0001 C CNN
+F 1 "GND_SMALL" H 15350 7800 50  0001 C CNN
+F 2 "" H 15350 7800 50  0001 C CNN
+F 3 "" H 15350 7800 50  0001 C CNN
+	1    15350 7800
+	1    0    0    -1  
+$EndComp
+Text Notes 14750 8250 0    50   ~ 0
+( 14.31818 MHz - NTSC )\n( 17.734472 MHz - PAL )
+Text GLabel 14000 1650 2    50   Input ~ 0
+CAN+5V
+Text GLabel 15650 7550 2    50   Input ~ 0
+CAN+5V
 Wire Bus Line
 	8400 9200 8400 9400
 Wire Bus Line
