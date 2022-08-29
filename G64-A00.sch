@@ -1464,7 +1464,7 @@ Wire Wire Line
 	4300 1150 4300 1000
 Connection ~ 4050 1150
 Wire Wire Line
-	4050 1150 4050 5000
+	4050 1150 4050 2900
 $Comp
 L C64-schematics-library:74LS06_ U8
 U 6 1 605D0372
@@ -1674,8 +1674,6 @@ F 3 "" H 10700 7650 50  0001 C CNN
 	1    10700 7650
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3250 7200 3550 7200
 Wire Wire Line
 	7150 9800 7150 9050
 Wire Wire Line
@@ -3813,111 +3811,6 @@ Wire Wire Line
 Text Label 5950 7400 1    50   ~ 0
 60Hz
 $Comp
-L C64-discrete-library:D_Small_ALT CR100
-U 1 1 6078F583
-P 3100 7650
-F 0 "CR100" H 2800 7650 50  0000 C CNN
-F 1 "D_Small_ALT" H 3150 7450 50  0001 C CNN
-F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 3100 7650 50  0001 C CNN
-F 3 "~" V 3100 7650 50  0001 C CNN
-	1    3100 7650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C64-discrete-library:D_Small_ALT CR102
-U 1 1 6078FB82
-P 3100 7750
-F 0 "CR102" H 2800 7750 50  0000 C CNN
-F 1 "D_Small_ALT" H 3150 7550 50  0001 C CNN
-F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 3100 7750 50  0001 C CNN
-F 3 "~" V 3100 7750 50  0001 C CNN
-	1    3100 7750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 7650 2950 7650
-Wire Wire Line
-	2950 7650 2950 7400
-Connection ~ 2950 7400
-Wire Wire Line
-	3000 7750 2950 7750
-Wire Wire Line
-	2950 7750 2950 7650
-Connection ~ 2950 7650
-Wire Wire Line
-	3200 7650 3550 7650
-Wire Wire Line
-	3550 7650 3550 7200
-Connection ~ 3550 7200
-Wire Wire Line
-	3550 7200 3850 7200
-Wire Wire Line
-	3200 7750 3650 7750
-Wire Wire Line
-	3650 7750 3650 7300
-$Comp
-L C64-discrete-library:D_Small_ALT CR101
-U 1 1 6093D975
-P 4200 7000
-F 0 "CR101" H 4650 7000 50  0000 C CNN
-F 1 "D_Small_ALT" H 4550 7050 50  0001 C CNN
-F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4200 7000 50  0001 C CNN
-F 3 "~" V 4200 7000 50  0001 C CNN
-	1    4200 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L C64-discrete-library:D_Small_ALT CR103
-U 1 1 6093E0B5
-P 4200 7100
-F 0 "CR103" H 4650 7100 50  0000 C CNN
-F 1 "D_Small_ALT" H 4550 7150 50  0001 C CNN
-F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4200 7100 50  0001 C CNN
-F 3 "~" V 4200 7100 50  0001 C CNN
-	1    4200 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 7300 4100 7300
-Wire Wire Line
-	3950 7200 4050 7200
-Wire Wire Line
-	4100 7000 4050 7000
-Wire Wire Line
-	4050 7000 4050 7200
-Connection ~ 4050 7200
-Wire Wire Line
-	4050 7200 4850 7200
-Wire Wire Line
-	4100 7100 4100 7300
-Connection ~ 4100 7300
-Wire Wire Line
-	4100 7300 3750 7300
-Wire Wire Line
-	4300 7000 4350 7000
-Wire Wire Line
-	4300 7100 4350 7100
-Wire Wire Line
-	4350 7100 4350 7000
-Connection ~ 4350 7000
-Wire Wire Line
-	4350 7000 4450 7000
-Wire Wire Line
-	4450 7000 4450 7100
-$Comp
-L C64-schematics-library:GND_SMALL #U0126
-U 1 1 60DFE6EB
-P 4450 7100
-AR Path="/60DFE6EB" Ref="#U0126"  Part="1" 
-AR Path="/5D940AF4/60DFE6EB" Ref="#U?"  Part="1" 
-F 0 "#U0126" H 4450 7100 50  0001 C CNN
-F 1 "GND_SMALL" H 4450 7100 50  0001 C CNN
-F 2 "" H 4450 7100 50  0001 C CNN
-F 3 "" H 4450 7100 50  0001 C CNN
-	1    4450 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L C64-schematics-library:R_US_CUSTOM R100
 U 1 1 61414B10
 P 7200 10650
@@ -4134,9 +4027,9 @@ Wire Wire Line
 Wire Wire Line
 	3450 1400 3450 7400
 Wire Wire Line
-	3650 1300 3650 7300
+	3650 1300 3650 3100
 Wire Wire Line
-	3850 1200 3850 7200
+	3850 1200 3850 3000
 Wire Wire Line
 	6650 4250 7050 4250
 Wire Wire Line
@@ -4170,6 +4063,178 @@ Wire Wire Line
 	6450 4450 7550 4450
 Text GLabel 7850 8750 0    50   Output ~ 0
 CAN+5V
+$Comp
+L C64-discrete-library:D_Small_ALT CR9
+U 1 1 63289211
+P 4400 2750
+F 0 "CR9" H 4250 2850 50  0000 L CNN
+F 1 "D_Small_ALT" V 4445 2818 50  0001 L CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4400 2750 50  0001 C CNN
+F 3 "" V 4400 2750 50  0001 C CNN
+	1    4400 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR13
+U 1 1 6328B9C4
+P 4600 2750
+F 0 "CR13" H 4400 2850 50  0000 L CNN
+F 1 "D_Small_ALT" V 4645 2818 50  0001 L CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4600 2750 50  0001 C CNN
+F 3 "" V 4600 2750 50  0001 C CNN
+	1    4600 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR14
+U 1 1 6328C594
+P 4800 2750
+F 0 "CR14" H 4600 2850 50  0000 L CNN
+F 1 "D_Small_ALT" V 4845 2818 50  0001 L CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4800 2750 50  0001 C CNN
+F 3 "" V 4800 2750 50  0001 C CNN
+	1    4800 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR12
+U 1 1 633302BF
+P 4400 3300
+F 0 "CR12" H 4200 3400 50  0000 L CNN
+F 1 "D_Small_ALT" V 4445 3368 50  0001 L CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4400 3300 50  0001 C CNN
+F 3 "" V 4400 3300 50  0001 C CNN
+	1    4400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR15
+U 1 1 63330733
+P 4600 3300
+F 0 "CR15" H 4400 3400 50  0000 L CNN
+F 1 "D_Small_ALT" V 4645 3368 50  0001 L CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4600 3300 50  0001 C CNN
+F 3 "" V 4600 3300 50  0001 C CNN
+	1    4600 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L C64-discrete-library:D_Small_ALT CR16
+U 1 1 6333073D
+P 4800 3300
+F 0 "CR16" H 4600 3400 50  0000 L CNN
+F 1 "D_Small_ALT" V 4845 3368 50  0001 L CNN
+F 2 "C64-pcb-library:RECTIFIER_TH_P12.7mm" V 4800 3300 50  0001 C CNN
+F 3 "" V 4800 3300 50  0001 C CNN
+	1    4800 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3400 4400 3500
+$Comp
+L C64-schematics-library:GND_SMALL #U0126
+U 1 1 633D74CF
+P 4400 3500
+AR Path="/633D74CF" Ref="#U0126"  Part="1" 
+AR Path="/5D940AF4/633D74CF" Ref="#U?"  Part="1" 
+F 0 "#U0126" H 4400 3500 50  0001 C CNN
+F 1 "GND_SMALL" H 4400 3500 50  0001 C CNN
+F 2 "" H 4400 3500 50  0001 C CNN
+F 3 "" H 4400 3500 50  0001 C CNN
+	1    4400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3400 4600 3500
+$Comp
+L C64-schematics-library:GND_SMALL #U0129
+U 1 1 633DA459
+P 4600 3500
+AR Path="/633DA459" Ref="#U0129"  Part="1" 
+AR Path="/5D940AF4/633DA459" Ref="#U?"  Part="1" 
+F 0 "#U0129" H 4600 3500 50  0001 C CNN
+F 1 "GND_SMALL" H 4600 3500 50  0001 C CNN
+F 2 "" H 4600 3500 50  0001 C CNN
+F 3 "" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3400 4800 3500
+$Comp
+L C64-schematics-library:GND_SMALL #U0130
+U 1 1 6342A472
+P 4800 3500
+AR Path="/6342A472" Ref="#U0130"  Part="1" 
+AR Path="/5D940AF4/6342A472" Ref="#U?"  Part="1" 
+F 0 "#U0130" H 4800 3500 50  0001 C CNN
+F 1 "GND_SMALL" H 4800 3500 50  0001 C CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2850 4400 2900
+Wire Wire Line
+	4600 2850 4600 3000
+Wire Wire Line
+	4800 2850 4800 3100
+Wire Wire Line
+	4800 3100 3650 3100
+Connection ~ 4800 3100
+Wire Wire Line
+	4800 3100 4800 3200
+Connection ~ 3650 3100
+Wire Wire Line
+	3650 3100 3650 7300
+Wire Wire Line
+	4600 3000 3850 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	4600 3000 4600 3200
+Connection ~ 3850 3000
+Wire Wire Line
+	3850 3000 3850 7200
+Wire Wire Line
+	4400 2900 4050 2900
+Connection ~ 4400 2900
+Wire Wire Line
+	4400 2900 4400 3200
+Connection ~ 4050 2900
+Wire Wire Line
+	4050 2900 4050 5000
+Wire Wire Line
+	4400 2650 4400 2450
+Wire Wire Line
+	4400 2450 4600 2450
+Wire Wire Line
+	4800 2450 4800 2650
+Wire Wire Line
+	4600 2650 4600 2450
+Connection ~ 4600 2450
+Wire Wire Line
+	4600 2450 4800 2450
+Wire Wire Line
+	4800 2450 4800 2350
+Connection ~ 4800 2450
+$Comp
+L C64-discrete-library:+5V-power #PWR0161
+U 1 1 637635FA
+P 4800 2350
+AR Path="/637635FA" Ref="#PWR0161"  Part="1" 
+AR Path="/5D940AF4/637635FA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0161" H 4800 2200 50  0001 C CNN
+F 1 "+5V" H 4683 2491 50  0000 L CNN
+F 2 "" H 4800 2350 50  0001 C CNN
+F 3 "" H 4800 2350 50  0001 C CNN
+	1    4800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 7200 4850 7200
+Wire Wire Line
+	3750 7300 4750 7300
 Wire Bus Line
 	7350 7100 7350 7400
 Wire Bus Line
@@ -4180,4 +4245,6 @@ Wire Bus Line
 	6750 1950 6750 5900
 Wire Bus Line
 	6650 3550 6650 8400
+Wire Wire Line
+	3250 7200 3850 7200
 $EndSCHEMATC
